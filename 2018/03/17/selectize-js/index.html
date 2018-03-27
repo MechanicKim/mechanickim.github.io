@@ -38,6 +38,8 @@
     <meta name="description" itemprop="description" content="">
     <meta name="keywords" content=",Dev,javascript">
 
+    
+
     <!-- Site Verification -->
     
     
@@ -279,7 +281,7 @@
 
         <script>lsloader.load("js/jquery.min.js","/js/jquery.min.js?qcusAULNeBksqffqUM2+Ig==")</script>
     
-    
+
     <script>function Queue(){this.dataStore=[];this.offer=b;this.poll=d;this.execNext=a;this.debug=false;this.startDebug=c;function b(e){if(this.debug){console.log("Offered a Queued Function.")}if(typeof e==="function"){this.dataStore.push(e)}else{console.log("You must offer a function.")}}function d(){if(this.debug){console.log("Polled a Queued Function.")}return this.dataStore.shift()}function a(){var e=this.poll();if(e!==undefined){if(this.debug){console.log("Run a Queued Function.")}e()}}function c(){this.debug=true}}var queue=new Queue();</script>
 
     <!-- Analytics -->
@@ -516,7 +518,6 @@
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">$(<span class="string">'#input-tags'</span>).selectize(&#123;</span><br><span class="line">	delimiter: <span class="string">','</span>,</span><br><span class="line">	persist: <span class="literal">true</span>,</span><br><span class="line">	create: <span class="function"><span class="keyword">function</span>(<span class="params">input</span>) </span>&#123;</span><br><span class="line">		<span class="keyword">return</span> &#123;</span><br><span class="line">			value: input,</span><br><span class="line">			text: input</span><br><span class="line">		&#125;</span><br><span class="line">	&#125;</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
 <p>위 코드에서 persist를 false를 준다면 기본 value값 외에 추가 입력값은 옵션으로 등록되지 않습니다.</p>
 <p>이 외에 다양한 예제들을 <a href="https://selectize.github.io/selectize.js/" target="_blank" rel="noopener">여기</a>에서 확인이 가능합니다. 어떠 어떠한 특징을 가진 select가 필요하다고 한다면 나올 수 있는 다양한 목적과 형태를 selectize.js를 통해 만들 수 있습니다.</p>
-<p>-</p>
 <h3 id="링크"><a href="#링크" class="headerlink" title="링크"></a>링크</h3><p><a href="https://github.com/selectize/selectize.js/" target="_blank" rel="noopener">Selectize Git</a> : 라이브러리를 다운받을 수 있는 저장소<br><a href="https://selectize.github.io/selectize.js/" target="_blank" rel="noopener">Selectize Page</a> : 공식 홈페이지로 예제를 볼 수 있는 곳<br><a href="https://github.com/selectize/selectize.js/blob/master/docs/usage.md" target="_blank" rel="noopener">Selectize Usage</a> : 사용법</p>
 
     
@@ -536,6 +537,14 @@
             <!-- Post Prev & Next Nav -->
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
+    
+        <a href="/2018/03/24/yeoman/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
     
 
     <!-- Section Spacer -->
@@ -635,7 +644,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/03/">March 2018<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/03/">March 2018<span class="sidebar_archives-count">4</span></a>
             </ul>
         </li>
         
