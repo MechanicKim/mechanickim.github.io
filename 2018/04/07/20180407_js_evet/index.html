@@ -12,7 +12,7 @@
     
     <title>
         
-            Tag: Hexo | 
+            JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링? | 
         
         Jason의 개발자 블로그
     </title>
@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Jason">
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",JavaScript,Event,Bubbling,Capturing">
 
     
 
@@ -67,15 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mechanickim.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Tag: Hexo | Jason의 개발자 블로그">
+    <meta property="og:title" content="JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링? | Jason의 개발자 블로그">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="JavaScript"> <meta property="og:article:tag" content="Event"> <meta property="og:article:tag" content="Bubbling"> <meta property="og:article:tag" content="Capturing"> 
 
+    
+        <meta property="article:published_time" content="Apr 07, 2018" />
+        <meta property="article:modified_time" content="Apr 07, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Tag: Hexo | Jason의 개발자 블로그">
+    <meta name="twitter:title" content="JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링? | Jason의 개발자 블로그">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -83,13 +86,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://mechanickim.github.io/tags/Hexo/index.html" />
+        <link rel="canonical" href="https://mechanickim.github.io/2018/04/07/20180407_js_evet/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Jason의 개발자 블로그",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Jason",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "I'm glad you're here :-)"
+    },
+    "headline": "JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링?",
+    "url": "https://mechanickim.github.io/2018/04/07/20180407_js_evet/index.html",
+    "datePublished": "Apr 07, 2018",
+    "dateModified": "Apr 07, 2018",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mechanickim.github.io"
+    }
+}
+</script>
 
 
     
@@ -277,97 +310,394 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
+    
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
+            </span>
+        </a>
+    </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#이벤트-핸들링-DOM-Level-0"><span class="post-toc-number">1.</span> <span class="post-toc-text">이벤트 핸들링 DOM Level 0</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#이벤트-핸들링-DOM-Level-2"><span class="post-toc-number">2.</span> <span class="post-toc-text">이벤트 핸들링 DOM Level 2</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#이벤트의-흐름"><span class="post-toc-number">3.</span> <span class="post-toc-text">이벤트의 흐름</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#이벤트-버블링"><span class="post-toc-number">4.</span> <span class="post-toc-text">이벤트 버블링</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#이벤트-캡쳐링"><span class="post-toc-number">5.</span> <span class="post-toc-text">이벤트 캡쳐링</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#마치며…"><span class="post-toc-number">6.</span> <span class="post-toc-text">마치며…</span></a></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
     
 
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script type="text/ls-javascript" id="post-thumbnail-script">
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/17/20180317_blog_hexo/">블로그 프레임워크 Hexo</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            빠르고 간단하고 강력하기까지 하다는 블로그 프레임워크 ‘Hexo’를 이용하여 블로그를 만들면서 겪은 시행착오를 정리해봅니다.
-...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/17/20180317_blog_hexo/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jason's avatar">
-            </div>
-            <div>
-                <strong>Jason</strong>
-                <span>Mar 17, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/ETC/">ETC</a>, <a class="post_category-link" href="/categories/ETC/Hexo/">Hexo</a>
-            </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-            
-            
-        
-    
-
-    
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
+    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
     $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링?
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Jason</strong>
+        <span>Apr 07, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/Bubbling/">Bubbling</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Capturing/">Capturing</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Event/">Event</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/JavaScript/">JavaScript</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링?&url=https://mechanickim.github.io/2018/04/07/20180407_js_evet/index.html&via=Jason" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://mechanickim.github.io/2018/04/07/20180407_js_evet/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://mechanickim.github.io/2018/04/07/20180407_js_evet/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mechanickim.github.io/2018/04/07/20180407_js_evet/index.html&title=JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링?" target="_blank">
+            <li class="mdl-menu__item">
+                Share to LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://mechanickim.github.io/2018/04/07/20180407_js_evet/index.html&text=JavaScript 이벤트 핸들링 모델, 버블링, 캡쳐링?" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <blockquote>
+<p>필요할 때가 많지 않다보니 항상 검색해서 찾아 써야했던 stopPropagation 함수는 그저 버블링을 막기 위해 쓰는 것이라는 것만 아는 것으로 끝났는데, 이번 기회에 공부도 할 겸 정리해 보았습니다. 우선 참고한 곳은 다음과 같습니다.</p>
+</blockquote>
+<ul>
+<li><a href="https://github.com/wonism/TIL/blob/master/front-end/javascript/event.md" target="_blank" rel="noopener">자바스크립트 이벤트</a></li>
+</ul>
+<h3 id="이벤트-핸들링-DOM-Level-0"><a href="#이벤트-핸들링-DOM-Level-0" class="headerlink" title="이벤트 핸들링 DOM Level 0"></a>이벤트 핸들링 DOM Level 0</h3><p>Netscape Navigator에서 소개되었으며, 인라인 모델과 기존 모델 두 가지가 있습니다.</p>
+<ol>
+<li>인라인 모델<pre class=" language-markup"><code class="language-markup"><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>alert(<span class="token punctuation">'</span>안녕!<span class="token punctuation">'</span>); return false;<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>눌러봐<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+</code></pre>
+JavaScript 엔진이 onclick 속성의 내용을 포함하는 익명 함수를 생성하며, 버튼의 onclick 핸들러는 다음 익명 함수에 바인드됩니다.<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token function">alert</span><span class="token punctuation">(</span><span class="token string">'안녕!'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token keyword">return</span> <span class="token boolean">false</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+</li>
+<li>기존 모델<ul>
+<li>JavaScript로 이벤트 핸들러를 추가하거나 제거할 수 있습니다.</li>
+<li>하나의 이벤트에는 하나의 이벤트 핸들러만 등록이 가능합니다.</li>
+<li>핸들러를 제거하려면 이벤트 속성을 null로 설정합니다.</li>
+<li>인자를 넘기기 위해 클로저 개념을 사용할 수도 있습니다.<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">triggeredEvent</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string">'이벤트가 발생하였습니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+window<span class="token punctuation">.</span>onload <span class="token operator">=</span> triggeredEvent<span class="token punctuation">;</span>
+window<span class="token punctuation">.</span>onload <span class="token operator">=</span> <span class="token keyword">null</span><span class="token punctuation">;</span> <span class="token comment" spellcheck="true">// 이벤트 제거</span>
+document<span class="token punctuation">.</span>onclick <span class="token operator">=</span> <span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<span class="token keyword">return</span> <span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>str<span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">(</span><span class="token string">'이벤트가 발생하였습니다.'</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ol>
+<h3 id="이벤트-핸들링-DOM-Level-2"><a href="#이벤트-핸들링-DOM-Level-2" class="headerlink" title="이벤트 핸들링 DOM Level 2"></a>이벤트 핸들링 DOM Level 2</h3><p>이제부터 보다 현명한 이벤트 핸들링 모델을 설계하게 됩니다.</p>
+<ul>
+<li><code>addEventListener</code>를 통해 리스너를 등록할 수 있습니다.(구버전 IE는 attachEvent)</li>
+<li><code>removeEventListener</code>를 통해 리스너를 제거할 수 있습니다.(구버전 IE는 detachEvent)</li>
+<li><code>dispatchEvent</code>를 통해 이벤트 리스너에 이벤트를 보낼 수 있습니다.(구버전 IE는 fireEvent)</li>
+<li>동일한 이벤트에 여러 이벤트 핸들러를 등록할 수 있습니다. <code>useCapture</code>옵션을 통해 캡쳐 단계에서 핸들러를 호출하도록 지정할 수 있습니다.</li>
+<li>버블링을 막기위해 이벤트 객체의 <code>stopPropagation</code>를 호출할 수 있습니다.(구버전 IE는 이벤트 객체의 cancelBubble 속성을 true로 지정)</li>
+<li>이벤트의 기본 동작이 호출되지 않게 하기위해 이벤트 객체의 <code>preventDefault</code>를 호출할 수 있습니다.(구버전 IE는 이벤트 객체의 returnValue 속성을 false로 지정)</li>
+</ul>
+<h3 id="이벤트의-흐름"><a href="#이벤트의-흐름" class="headerlink" title="이벤트의 흐름"></a>이벤트의 흐름</h3><p>이벤트의 흐름을 나타내는 간단한 그림입니다.</p>
+<p><img src="http://www.tutorialspark.com/javascript/DOM2_Event_Flow.png" alt=""></p>
+<p>버블링과 캡쳐링이 서로 반대되는 것을 알 수 있습니다. 이벤트는 먼저 대상 요소에 도달할 때까지 캡쳐된 다음 위로 올라갑니다.</p>
+<h3 id="이벤트-버블링"><a href="#이벤트-버블링" class="headerlink" title="이벤트 버블링"></a>이벤트 버블링</h3><p>이벤트는 먼저 대상 요소에 도달할 때까지 캡쳐된 다음 위로 올라갑니다.</p>
+<pre class=" language-markup"><code class="language-markup"><span class="token doctype">&lt;!DOCTYPE>
+&lt;html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Event Bubbling<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>onClick(this);<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Click me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span>
+  function onClick(element, e) {
+    e = window.event || e;
+    console.log(element.nodeName);
+  }
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>위와 같이 main 요소에 button 요소가 있다고 할 때, button 요소에 click 이벤트가 발생하면, button 요소는 물론, main 요소도 이벤트를 감지할 수 있습니다.</p>
+<blockquote>
+<p><strong>Event capturing</strong> : document &gt; html &gt; body &gt; main &gt; button (이벤트를 가로채는 단계)<br><strong>Target</strong> : button (실제 타겟이 이벤트를 가져오는 단계)<br><strong>Event bubbling</strong> : button &gt; main &gt; body &gt; html &gt; document (이벤트에 최종 응답을 허용하는 단계)</p>
+</blockquote>
+<p>예제를 통해 살펴보겠습니다.</p>
+<pre class=" language-markup"><code class="language-markup"><span class="token doctype">&lt;!DOCTYPE>
+&lt;html onclick="onClick(this);"></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Event Bubbling<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>onClick(this);<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>onClick(this);<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span> <span class="token attr-name">onclick</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>onClick(this);<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Click me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span>
+  function onClick(element, e) {
+    e = window.event || e;
+    console.log(element.nodeName);
+  }
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>버튼을 클릭하면 <code>BUTTON &gt; MAIN &gt; BODY &gt; HTML</code> 순서로 콘솔 로그가 찍히는 것을 확인할 수 있습니다.</p>
+<p>이번에는 버블링을 방지해 보도록 하겠습니다. <code>stopPropagation</code>를 사용합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">onClick</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> e<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  e <span class="token operator">=</span> window<span class="token punctuation">.</span>event <span class="token operator">||</span> e<span class="token punctuation">;</span>
+  console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>element<span class="token punctuation">.</span>nodeName<span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>e<span class="token punctuation">.</span>stopPropagation<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span><span class="token function">stopPropagation</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span> <span class="token keyword">else</span> <span class="token punctuation">{</span>
+    e<span class="token punctuation">.</span>cancelBubble <span class="token operator">=</span> <span class="token boolean">true</span> <span class="token comment" spellcheck="true">// IE Support</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>결과는 <code>BUTTON</code>만 찍히는 것을 확인할 수 있습니다.</p>
+<h3 id="이벤트-캡쳐링"><a href="#이벤트-캡쳐링" class="headerlink" title="이벤트 캡쳐링"></a>이벤트 캡쳐링</h3><p>우선 예제를 보겠습니다.</p>
+<pre class=" language-markup"><code class="language-markup"><span class="token doctype">&lt;!DOCTYPE>
+&lt;html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Event Capturing<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>main</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>button</span><span class="token punctuation">></span></span>Click me!<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>button</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>main</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>script</span><span class="token punctuation">></span></span>
+  // DOM LEVEL 2 Event Model 처리 함수
+  function addEvent(element, type, handler, capture) {
+    type = typeof type === 'string' &amp;&amp; type || '';
+    handler = handler || function () {};
+
+    if (element.addEventListener) {
+      element.addEventListener(type, handler, capture);
+    } else if (element.attachEvent) { // For IE8
+      element.attachEvent('on' + type, handler);
+    }
+
+    return element;
+  };
+
+  addEvent(window, 'load', function () {
+    addEvent(document, 'click', function (e) {
+      var event = e || window.event,
+          target = e.target || e.srcElement;
+
+      console.log(this.nodeName, target.nodeName);
+    }, true);
+
+    addEvent(document.documentElement, 'click', function (e) {
+      var event = e || window.event,
+          target = e.target || e.srcElement;
+
+      console.log(this.nodeName, target.nodeName);
+    }, true);
+
+    addEvent(document.body, 'click', function (e) {
+      var event = e || window.event,
+          target = e.target || e.srcElement;
+
+      console.log(this.nodeName, target.nodeName);
+    }, true);
+
+    addEvent(document.querySelector('main'), 'click', function (e) {
+      var event = e || window.event,
+          target = e.target || e.srcElement;
+
+      console.log(this.nodeName, target.nodeName);
+    }, false);
+
+    addEvent(document.querySelector('button'), 'click', function (e) {
+      var event = e || window.event,
+          target = e.target || e.srcElement;
+
+      console.log(this.nodeName, target.nodeName);
+    }, true);
+  }, false);
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>script</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p>결과는 어떻게 될까요? <code>#document BUTTON &gt; HTML BUTTON &gt; BODY BUTTON &gt; BUTTON BUTTON &gt; MAIN BUTTON</code>이 됩니다. 여기서 <code>MAIN BUTTON</code>이 제일 늦게 출력된 이유가 무엇일까요? <code>useCapture</code>를 <code>false</code>로 준 것들은 이벤트 버블링 방식으로 이벤트가 등록되게 됩니다.</p>
+<h3 id="마치며…"><a href="#마치며…" class="headerlink" title="마치며…"></a>마치며…</h3><p>이번 기회를 통해 캡쳐링과 버블링과 어느정도 친숙해 질 수 있었네요. 무엇보다 중요한 것은 ‘자주 실무에 적용해보는 것’ 이겠지요. :-)</p>
+
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/07/20180407_book_deep_learning/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -528,6 +858,14 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
+
+                    
+                        <!-- Footer Top Button -->
+                        <div id="back-to-top" class="toTop-wrap">
+    <a href="#top" class="toTop">
+        <i class="material-icons footer_top-i">expand_less</i>
+    </a>
+</div>
 
                     
 

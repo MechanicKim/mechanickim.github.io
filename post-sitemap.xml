@@ -7,40 +7,24 @@
     </url>
 
     <url>
+        <loc>https://mechanickim.github.io/2018/04/07/20180407_book_deep_learning/</loc>
+        <lastmod>2018-04-07T03:39:39.348Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/04/07/20180407_js_evet/</loc>
+        <lastmod>2018-04-07T03:13:45.096Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mechanickim.github.io/2018/04/06/20180406_book_happiness/</loc>
-        <lastmod>2018-04-06T14:27:32.043Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mechanickim.github.io/2018/03/31/20180331_mordern_javascript/</loc>
-        <lastmod>2018-03-31T02:49:58.484Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mechanickim.github.io/2018/03/31/20180331_markdown/</loc>
-        <lastmod>2018-03-31T00:19:35.280Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mechanickim.github.io/2018/03/24/20180324_yeoman/</loc>
-        <lastmod>2018-03-31T00:19:26.424Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mechanickim.github.io/2018/03/17/20180317_selectize_js/</loc>
-        <lastmod>2018-03-31T00:19:18.162Z</lastmod>
+        <lastmod>2018-04-07T02:56:01.237Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -48,7 +32,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/17/20180317_blog_hexo/</loc>
-        <lastmod>2018-03-31T00:08:39.400Z</lastmod>
+        <lastmod>2018-04-07T02:41:22.757Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -56,7 +40,39 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/17/20180317_new_start/</loc>
-        <lastmod>2018-03-31T00:08:26.779Z</lastmod>
+        <lastmod>2018-04-07T02:40:46.326Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/03/17/20180317_selectize_js/</loc>
+        <lastmod>2018-04-07T02:40:06.948Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/03/24/20180324_yeoman/</loc>
+        <lastmod>2018-04-07T02:39:13.431Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/03/31/20180331_markdown/</loc>
+        <lastmod>2018-04-07T02:38:30.824Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/03/31/20180331_mordern_javascript/</loc>
+        <lastmod>2018-04-07T02:37:28.124Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

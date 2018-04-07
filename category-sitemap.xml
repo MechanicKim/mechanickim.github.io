@@ -7,50 +7,57 @@
     </url>
 
     <url>
-        <loc>https://mechanickim.github.io/categories/ETC/Hexo/</loc>
-        <lastmod>2018-03-31T00:08:39.400Z</lastmod>
+        <loc>https://mechanickim.github.io/categories/Dev/Markdown/</loc>
+        <lastmod>2018-04-07T02:38:30.824Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://mechanickim.github.io/categories/Dev/Yeoman/</loc>
-        <lastmod>2018-03-31T00:19:26.424Z</lastmod>
+        <lastmod>2018-04-07T02:39:13.431Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://mechanickim.github.io/categories/Dev/Markdown/</loc>
-        <lastmod>2018-03-31T00:19:35.280Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mechanickim.github.io/categories/Dev/</loc>
-        <lastmod>2018-03-31T02:49:58.484Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
-        <loc>https://mechanickim.github.io/categories/Dev/JavaScript/</loc>
-        <lastmod>2018-03-31T02:49:58.484Z</lastmod>
+        <loc>https://mechanickim.github.io/categories/ETC/Diary/</loc>
+        <lastmod>2018-04-07T02:40:46.326Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://mechanickim.github.io/categories/ETC/</loc>
-        <lastmod>2018-04-06T14:27:32.043Z</lastmod>
+        <lastmod>2018-04-07T02:41:22.757Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://mechanickim.github.io/categories/ETC/Book/</loc>
-        <lastmod>2018-04-06T14:27:32.043Z</lastmod>
+        <loc>https://mechanickim.github.io/categories/ETC/Hexo/</loc>
+        <lastmod>2018-04-07T02:41:22.757Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/categories/Dev/</loc>
+        <lastmod>2018-04-07T03:13:45.096Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/categories/Dev/JavaScript/</loc>
+        <lastmod>2018-04-07T03:13:45.096Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/categories/Book/</loc>
+        <lastmod>2018-04-07T03:39:39.348Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
