@@ -7,8 +7,24 @@
     </url>
 
     <url>
+        <loc>https://mechanickim.github.io/2018/04/15/react-helloworld/</loc>
+        <lastmod>2018-04-15T12:24:13.566Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/04/15/react-installation/</loc>
+        <lastmod>2018-04-15T12:24:05.973Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mechanickim.github.io/2018/04/07/20180407_book_deep_learning/</loc>
-        <lastmod>2018-04-07T03:39:39.348Z</lastmod>
+        <lastmod>2018-04-07T03:39:39.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +32,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/04/07/20180407_js_evet/</loc>
-        <lastmod>2018-04-07T03:13:45.096Z</lastmod>
+        <lastmod>2018-04-07T03:13:45.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -24,7 +40,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/04/06/20180406_book_happiness/</loc>
-        <lastmod>2018-04-07T02:56:01.237Z</lastmod>
+        <lastmod>2018-04-07T02:56:01.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -32,7 +48,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/17/20180317_blog_hexo/</loc>
-        <lastmod>2018-04-07T02:41:22.757Z</lastmod>
+        <lastmod>2018-04-07T02:41:22.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -40,7 +56,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/17/20180317_new_start/</loc>
-        <lastmod>2018-04-07T02:40:46.326Z</lastmod>
+        <lastmod>2018-04-07T02:40:46.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -48,7 +64,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/17/20180317_selectize_js/</loc>
-        <lastmod>2018-04-07T02:40:06.948Z</lastmod>
+        <lastmod>2018-04-07T02:40:06.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -56,7 +72,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/24/20180324_yeoman/</loc>
-        <lastmod>2018-04-07T02:39:13.431Z</lastmod>
+        <lastmod>2018-04-07T02:39:13.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -64,7 +80,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/31/20180331_markdown/</loc>
-        <lastmod>2018-04-07T02:38:30.824Z</lastmod>
+        <lastmod>2018-04-07T02:38:30.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -72,7 +88,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/03/31/20180331_mordern_javascript/</loc>
-        <lastmod>2018-04-07T02:37:28.124Z</lastmod>
+        <lastmod>2018-04-07T02:37:28.000Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
