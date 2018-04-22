@@ -12,7 +12,7 @@
     
     <title>
         
-            Categories: Markdown | 
+            React - 4.Rendering Elements | 
         
         Jason의 개발자 블로그
     </title>
@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Jason">
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content="">
+    <meta name="keywords" content=",React">
 
     
 
@@ -67,15 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mechanickim.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Categories: Markdown | Jason의 개발자 블로그">
+    <meta property="og:title" content="React - 4.Rendering Elements | Jason의 개발자 블로그">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="">
-    
+    <meta property="og:article:tag" content="React"> 
 
+    
+        <meta property="article:published_time" content="Apr 21, 2018" />
+        <meta property="article:modified_time" content="Apr 21, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Categories: Markdown | Jason의 개발자 블로그">
+    <meta name="twitter:title" content="React - 4.Rendering Elements | Jason의 개발자 블로그">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -83,13 +86,43 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://mechanickim.github.io/categories/Dev/Markdown/index.html" />
+        <link rel="canonical" href="https://mechanickim.github.io/2018/04/21/react-4-rendering/index.html" />
     
 
     <!-- Structured-data for SEO -->
     
         
 
+
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name": "Jason의 개발자 블로그",
+        "logo": "/img/favicon.png"
+    },
+    "author": {
+        "@type": "Person",
+        "name": "Jason",
+        "image": {
+            "@type": "ImageObject",
+            "url": "/img/favicon.png"
+        },
+        "description": "I'm glad you're here :-)"
+    },
+    "headline": "React - 4.Rendering Elements",
+    "url": "https://mechanickim.github.io/2018/04/21/react-4-rendering/index.html",
+    "datePublished": "Apr 21, 2018",
+    "dateModified": "Apr 21, 2018",
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://mechanickim.github.io"
+    }
+}
+</script>
 
 
     
@@ -277,96 +310,257 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
     
-
-    <!-- Normal Post -->
-    
-        
-            
-                <!-- Paradox Thumbnail -->
-                <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
-    
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
-
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2018/03/31/20180331_markdown/">Atom을 Markdown 에디터로 만들기</a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            Hexo 블로그는 마크다운 문법을 씁니다. Atom 에디터를 주로 사용하는 저에게는 자연스럽게 Atom으로 포스트를 작성하는 것을 생...
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2018/03/31/20180331_markdown/" target="_self">Read more</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="Jason's avatar">
-            </div>
-            <div>
-                <strong>Jason</strong>
-                <span>Mar 31, 2018</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                <a class="post_category-link" href="/categories/Dev/">Dev</a>, <a class="post_category-link" href="/categories/Dev/Markdown/">Markdown</a>
+    <!-- Back Button -->
+    <!--
+    <div class="material-back" id="backhome-div" tabindex="0">
+        <a class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon"
+           href="#" onclick="window.history.back();return false;"
+           target="_self"
+           role="button"
+           data-upgraded=",MaterialButton,MaterialRipple">
+            <i class="material-icons" role="presentation">arrow_back</i>
+            <span class="mdl-button__ripple-container">
+                <span class="mdl-ripple"></span>
             </span>
-
-            
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
+        </a>
     </div>
+    -->
+
+    <!-- Left aligned menu below button -->
+    <button id="post-toc-trigger-btn"
+        class="mdl-button mdl-js-button mdl-button--icon">
+        <i class="material-icons">format_list_numbered</i>
+    </button>
+
+    
+    <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Elements"><span class="post-toc-number">1.</span> <span class="post-toc-text">Elements</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#DOM에-요소를-그리기"><span class="post-toc-number">2.</span> <span class="post-toc-text">DOM에 요소를 그리기</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#그려진-요소를-업데이트하기"><span class="post-toc-number">3.</span> <span class="post-toc-text">그려진 요소를 업데이트하기</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#React는-오직-필요한-부분만-업데이트"><span class="post-toc-number">4.</span> <span class="post-toc-text">React는 오직 필요한 부분만 업데이트</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Links"><span class="post-toc-number">5.</span> <span class="post-toc-text">Links</span></a></li></ol>
+        <!--
+        <li class="mdl-menu__item">
+            Some Action
+        </li>
+        -->
+    </ul>
+    
+
+
+
+
+
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
+    
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/react.png)">
+    
+            <p class="article-headline-p">
+                React - 4.Rendering Elements
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>Jason</strong>
+        <span>Apr 21, 2018</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        <a class="post_tag-link" href="/tags/React/">React</a>
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React - 4.Rendering Elements&url=https://mechanickim.github.io/2018/04/21/react-4-rendering/index.html&via=Jason" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://mechanickim.github.io/2018/04/21/react-4-rendering/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://mechanickim.github.io/2018/04/21/react-4-rendering/index.html" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mechanickim.github.io/2018/04/21/react-4-rendering/index.html&title=React - 4.Rendering Elements" target="_blank">
+            <li class="mdl-menu__item">
+                Share to LinkedIn
+            </li>
+        </a>
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://mechanickim.github.io/2018/04/21/react-4-rendering/index.html&text=React - 4.Rendering Elements" target="_blank">
+            <li class="mdl-menu__item">
+                Share to Telegram
+            </li>
+        </a>
+    
+</ul>
+
 </div>
 
-            
-            
-        
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
+        <blockquote>
+<p>React 앱의 블록을 이루는 가장 작은 요소</p>
+</blockquote>
+<h3 id="Elements"><a href="#Elements" class="headerlink" title="Elements"></a>Elements</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token operator">&lt;</span>h1<span class="token operator">></span>Hello<span class="token punctuation">,</span> world<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span><span class="token punctuation">;</span>
+</code></pre>
+<p>DOM 요소와 다르게 React 요소는 일반 객체로 생성이 쉽습니다. React DOM은 React 요소와 일치하는 DOM을 업데이트합니다. <strong>컴포넌트</strong>와 혼동할 수 있지만 요소는 컴포넌트를 이루는 더 작은 단위라고 하겠습니다.</p>
+<h3 id="DOM에-요소를-그리기"><a href="#DOM에-요소를-그리기" class="headerlink" title="DOM에 요소를 그리기"></a>DOM에 요소를 그리기</h3><pre class=" language-javascript"><code class="language-javascript"><span class="token operator">&lt;</span>div id<span class="token operator">=</span><span class="token string">"root"</span><span class="token operator">></span><span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+</code></pre>
+<p>HTML에서 ‘root’를 아이디로 하는 div 요소(DOM)입니다. 앞서 ‘Hello world’ 예제에서 public 폴더에 index.html 파일에서 볼 수 있습니다. <strong>ReactDOM</strong>이 이 요소 안에 있는 모든 것을 관리합니다. ‘Hello world’ 예제에서 아래와 같은 코드가 바로 그것입니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token operator">&lt;</span>h1<span class="token operator">></span>Hello<span class="token punctuation">,</span> world<span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span><span class="token punctuation">;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>ReactDOM.render가 아이디가 ‘root’인 요소 안에 element를 그립니다.</p>
+<h3 id="그려진-요소를-업데이트하기"><a href="#그려진-요소를-업데이트하기" class="headerlink" title="그려진 요소를 업데이트하기"></a>그려진 요소를 업데이트하기</h3><p>React 요소는 <strong>불변</strong>으로 한 번 생성하면 자식 요소 또는 속성을 바꿀 수 없습니다. 그렇다면 어떻게 업데이트를 할 수 있을까요? <code>ReactDOM.render</code>를 사용하면 됩니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">tick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> element <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>h1<span class="token operator">></span>Hello<span class="token punctuation">,</span> world<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
+      <span class="token operator">&lt;</span>h2<span class="token operator">></span>It is <span class="token punctuation">{</span><span class="token keyword">new</span> <span class="token class-name">Date</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">.</span><span class="token function">toLocaleTimeString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>element<span class="token punctuation">,</span> document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token function">setInterval</span><span class="token punctuation">(</span>tick<span class="token punctuation">,</span> <span class="token number">1000</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>setInterval</code> 함수로 매 초마다 <code>ReactDOM.render</code>를 호출하면 됩니다.(하지만 이게 최선의 방법은 아닙니다.)</p>
+<h3 id="React는-오직-필요한-부분만-업데이트"><a href="#React는-오직-필요한-부분만-업데이트" class="headerlink" title="React는 오직 필요한 부분만 업데이트"></a>React는 오직 필요한 부분만 업데이트</h3><p>React DOM는 이전 요소와 비교를 통해 필요한 부분만 업데이트를 합니다. 자식을 포함한 전체 요소를 다시 그리기를 요청해도 변경된 부분만 업데이트를 하는 것입니다. 매 초마다 tick 함수를 수행하는 예제를 실제 브라우저에서 개발자 도구를 통해 확인해 보면 다음과 같습니다.</p>
+<p><img src="https://reactjs.org/granular-dom-updates-c158617ed7cc0eac8f58330e49e48224.gif" alt=""></p>
+<p>분명 코드는 모든 요소를 그리도록 했는데 React가 변경된 부분만 업데이트를 수행하는 것을 볼 수 있습니다.</p>
+<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><ol>
+<li>공식 문서 <a href="https://reactjs.org/docs/rendering-elements.html" target="_blank" rel="noopener">view</a></li>
+</ol>
 
     
-
-    
-        <script type="text/ls-javascript" id="thumbnail-script">
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-
-        locatePost = locatePost.next();
-    }
-</script>
 
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+        <a href="/2018/04/21/react-5-components-props/" id="post_nav-newer" class="prev-content">
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_back</i>
+            </button>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            Newer
+        </a>
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+        <a href="/2018/04/16/react-3-jsx/" id="post_nav-older" class="next-content">
+            Older
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -446,7 +640,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2018/04/">April 2018<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">March 2018<span class="sidebar_archives-count">6</span></a>
+                <a class="sidebar_archives-link" href="/archives/2018/04/">April 2018<span class="sidebar_archives-count">9</span></a></li><li><a class="sidebar_archives-link" href="/archives/2018/03/">March 2018<span class="sidebar_archives-count">6</span></a>
             </ul>
         </li>
         
@@ -464,7 +658,7 @@
             </a>
             <ul class="dropdown-menu">
                 <li>
-                <a class="sidebar_archives-link" href="/categories/Book/">Book<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Dev/">Dev<span class="sidebar_archives-count">5</span></a></li><li><a class="sidebar_archives-link" href="/categories/Dev/JavaScript/">JavaScript<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/Dev/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Dev/Yeoman/">Yeoman<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/ETC/">ETC<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/ETC/Diary/">Diary<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/ETC/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/React/">React<span class="sidebar_archives-count">3</span></a>
+                <a class="sidebar_archives-link" href="/categories/Book/">Book<span class="sidebar_archives-count">2</span></a></li><li><a class="sidebar_archives-link" href="/categories/Diary/">Diary<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/Hexo/">Hexo<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/JavaScript/">JavaScript<span class="sidebar_archives-count">3</span></a></li><li><a class="sidebar_archives-link" href="/categories/Markdown/">Markdown<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/categories/React/">React<span class="sidebar_archives-count">6</span></a></li><li><a class="sidebar_archives-link" href="/categories/Yeoman/">Yeoman<span class="sidebar_archives-count">1</span></a>
             </ul>
         </li>
         
