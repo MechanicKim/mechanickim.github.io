@@ -9,13 +9,6 @@
     </url>
 
     <url>
-        <loc>https://mechanickim.github.io/tags/Book/</loc>
-        <lastmod>2018-04-07T03:39:39.000Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.2</priority>
-    </url>
-
-    <url>
         <loc>https://mechanickim.github.io/tags/DeepLearning/</loc>
         <lastmod>2018-04-07T03:39:39.000Z</lastmod>
         <changefreq>weekly</changefreq>
@@ -109,6 +102,20 @@
     <url>
         <loc>https://mechanickim.github.io/tags/React/</loc>
         <lastmod>2018-04-22T10:47:43.201Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/tags/Book/</loc>
+        <lastmod>2018-04-23T14:02:05.284Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/tags/Self-Help/</loc>
+        <lastmod>2018-04-23T14:02:05.284Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
