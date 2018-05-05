@@ -7,6 +7,14 @@
     </url>
 
     <url>
+        <loc>https://mechanickim.github.io/2018/05/05/react-7-handling-events/</loc>
+        <lastmod>2018-05-05T05:12:24.538Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
         <loc>https://mechanickim.github.io/2018/04/22/react-6-state-lifecycle/</loc>
         <lastmod>2018-05-05T02:28:01.737Z</lastmod>
         <changefreq>weekly</changefreq>
