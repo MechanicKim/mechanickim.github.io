@@ -7,8 +7,32 @@
     </url>
 
     <url>
-        <loc>https://mechanickim.github.io/2018/05/07/self-help-5/</loc>
-        <lastmod>2018-05-07T12:18:01.133Z</lastmod>
+        <loc>https://mechanickim.github.io/2018/05/13/self-help-5-2/</loc>
+        <lastmod>2018-05-13T13:59:50.428Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/05/07/self-help-5-1/</loc>
+        <lastmod>2018-05-13T13:40:07.300Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/04/23/self-help-1/</loc>
+        <lastmod>2018-05-13T13:31:09.614Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.6</priority>
+
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/</loc>
+        <lastmod>2018-05-12T02:15:52.359Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -16,7 +40,7 @@
 
     <url>
         <loc>https://mechanickim.github.io/2018/05/05/react-7-handling-events/</loc>
-        <lastmod>2018-05-05T05:12:24.538Z</lastmod>
+        <lastmod>2018-05-12T02:14:42.307Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 
@@ -49,14 +73,6 @@
     <url>
         <loc>https://mechanickim.github.io/2018/04/28/self-help-2/</loc>
         <lastmod>2018-05-05T02:14:20.414Z</lastmod>
-        <changefreq>weekly</changefreq>
-        <priority>0.6</priority>
-
-    </url>
-
-    <url>
-        <loc>https://mechanickim.github.io/2018/04/23/self-help-1/</loc>
-        <lastmod>2018-05-05T02:10:14.361Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.6</priority>
 

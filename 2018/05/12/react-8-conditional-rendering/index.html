@@ -12,7 +12,7 @@
     
     <title>
         
-            Atom을 Markdown 에디터로 만들기 | 
+            React - 8.Conditional Rendering | 
         
         Jason의 개발자 블로그
     </title>
@@ -36,7 +36,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="Jason">
     <meta name="description" itemprop="description" content="">
-    <meta name="keywords" content=",Atom,Markdown">
+    <meta name="keywords" content=",React">
 
     
 
@@ -67,18 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mechanickim.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="Atom을 Markdown 에디터로 만들기 | Jason의 개발자 블로그">
+    <meta property="og:title" content="React - 8.Conditional Rendering | Jason의 개발자 블로그">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="">
-    <meta property="og:article:tag" content="Atom"> <meta property="og:article:tag" content="Markdown"> 
+    <meta property="og:article:tag" content="React"> 
 
     
-        <meta property="article:published_time" content="Mar 31, 2018" />
-        <meta property="article:modified_time" content="Apr 21, 2018" />
+        <meta property="article:published_time" content="May 12, 2018" />
+        <meta property="article:modified_time" content="May 12, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="Atom을 Markdown 에디터로 만들기 | Jason의 개발자 블로그">
+    <meta name="twitter:title" content="React - 8.Conditional Rendering | Jason의 개발자 블로그">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -86,7 +86,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://mechanickim.github.io/2018/03/31/20180331_markdown/index.html" />
+        <link rel="canonical" href="https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -112,10 +112,10 @@
         },
         "description": "I'm glad you're here :-)"
     },
-    "headline": "Atom을 Markdown 에디터로 만들기",
-    "url": "https://mechanickim.github.io/2018/03/31/20180331_markdown/index.html",
-    "datePublished": "Mar 31, 2018",
-    "dateModified": "Apr 21, 2018",
+    "headline": "React - 8.Conditional Rendering",
+    "url": "https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html",
+    "datePublished": "May 12, 2018",
+    "dateModified": "May 12, 2018",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -337,7 +337,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Atom-에디터를-마크다운-에디터로-사용해보자"><span class="post-toc-number">1.</span> <span class="post-toc-text">Atom 에디터를 마크다운 에디터로 사용해보자!</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#마크다운을-위한-패키지-설치"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">마크다운을 위한 패키지 설치</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#한-번-사용해보자"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">한 번 사용해보자!</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#마지막으로-굉장한-팁-하나"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">마지막으로 굉장한 팁 하나!</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Link"><span class="post-toc-number">1.4.</span> <span class="post-toc-text">Link</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Element-Variables"><span class="post-toc-number">1.</span> <span class="post-toc-text">Element Variables</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#amp-amp-논리-연산자를-이용한-inline-if"><span class="post-toc-number">2.</span> <span class="post-toc-text">&amp;&amp; 논리 연산자를 이용한 inline if</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#조건-연산자를-이용한-inline-if"><span class="post-toc-number">3.</span> <span class="post-toc-text">조건 연산자를 이용한 inline if</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#컴포넌트를-그리지-말아야-하는-경우"><span class="post-toc-number">4.</span> <span class="post-toc-text">컴포넌트를 그리지 말아야 하는 경우</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Links"><span class="post-toc-number">5.</span> <span class="post-toc-text">Links</span></a></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -362,20 +362,11 @@
                 
     <!-- Paradox Post Header -->
     
-        
-            <!-- Random Thumbnail -->
-            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-            <script type="text/ls-javascript" id="post-thumbnail-script">
-    var randomNum = Math.floor(Math.random() * 19 + 1);
-
-    $('.post_thumbnail-random').attr('data-original', '/img/random/material-' + randomNum + '.png');
-    $('.post_thumbnail-random').addClass('lazy');
-</script>
-
-        
+        <!-- Custom Thumbnail -->
+        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/react.png)">
     
             <p class="article-headline-p">
-                Atom을 Markdown 에디터로 만들기
+                React - 8.Conditional Rendering
             </p>
         </div>
 
@@ -394,7 +385,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Jason</strong>
-        <span>Mar 31, 2018</span>
+        <span>May 12, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -418,7 +409,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/Atom/">Atom</a></li><li class="mdl-menu__item"><a class="post_tag-link" href="/tags/Markdown/">Markdown</a>
+        <a class="post_tag-link" href="/tags/React/">React</a>
     </ul>
     
 
@@ -437,7 +428,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=Atom을 Markdown 에디터로 만들기&url=https://mechanickim.github.io/2018/03/31/20180331_markdown/index.html&via=Jason" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React - 8.Conditional Rendering&url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html&via=Jason" target="_blank">
             <li class="mdl-menu__item">
                 Share to Twitter
             </li>
@@ -446,7 +437,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://mechanickim.github.io/2018/03/31/20180331_markdown/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Facebook
             </li>
@@ -455,7 +446,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://mechanickim.github.io/2018/03/31/20180331_markdown/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Google+
             </li>
@@ -464,7 +455,7 @@
 
     <!-- Share LinkedIn -->
     
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mechanickim.github.io/2018/03/31/20180331_markdown/index.html&title=Atom을 Markdown 에디터로 만들기" target="_blank">
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html&title=React - 8.Conditional Rendering" target="_blank">
             <li class="mdl-menu__item">
                 Share to LinkedIn
             </li>
@@ -476,7 +467,7 @@
 
     <!-- Share Telegram -->
     
-        <a class="post_share-link" href="https://telegram.me/share/url?url=https://mechanickim.github.io/2018/03/31/20180331_markdown/index.html&text=Atom을 Markdown 에디터로 만들기" target="_blank">
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html&text=React - 8.Conditional Rendering" target="_blank">
             <li class="mdl-menu__item">
                 Share to Telegram
             </li>
@@ -491,30 +482,184 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <p>Hexo 블로그는 마크다운 문법을 씁니다. Atom 에디터를 주로 사용하는 저에게는 자연스럽게 Atom으로 포스트를 작성하는 것을 생각하게 될 텐데요. 여기에 그 방법을 적어봅니다.</p>
-<h2 id="Atom-에디터를-마크다운-에디터로-사용해보자"><a href="#Atom-에디터를-마크다운-에디터로-사용해보자" class="headerlink" title="Atom 에디터를 마크다운 에디터로 사용해보자!"></a>Atom 에디터를 마크다운 에디터로 사용해보자!</h2><p>다음을 가정으로 해두고 진행하겠습니다.</p>
-<ol>
-<li>마크다운에 대해 이미 알고있다.</li>
-<li>Atom이 이미 설치되어있다.</li>
-</ol>
-<h3 id="마크다운을-위한-패키지-설치"><a href="#마크다운을-위한-패키지-설치" class="headerlink" title="마크다운을 위한 패키지 설치"></a>마크다운을 위한 패키지 설치</h3><p>마크다운 에디터를 만들기 위한 패키지를 설치하겠습니다.(macOS 기준)</p>
-<ol>
-<li>Atom &gt;&gt; Preferences &gt;&gt; Install</li>
-<li>language-markdown 검색, 설치</li>
-<li>markdown-writer 검색, 설치</li>
-<li>markdown-preview 검색, 섪치(보통 Atom에디터에 기본 설치되어있음)</li>
-</ol>
-<p>끝났어요. :-)</p>
-<h3 id="한-번-사용해보자"><a href="#한-번-사용해보자" class="headerlink" title="한 번 사용해보자!"></a>한 번 사용해보자!</h3><ol>
-<li>File &gt;&gt; New File, 파일을 하나 만들어줍니다. 확장자는 당연히 <code>md</code></li>
-<li><a href="https://gist.github.com/ihoneymon/652be052a0727ad59601" target="_blank" rel="noopener">마크다운 문법</a>을 활용하여 문서를 작성합니다.</li>
-<li>preview를 보고싶다면 <code>Shift + Control + M</code> 입니다.</li>
-</ol>
-<h3 id="마지막으로-굉장한-팁-하나"><a href="#마지막으로-굉장한-팁-하나" class="headerlink" title="마지막으로 굉장한 팁 하나!"></a>마지막으로 굉장한 팁 하나!</h3><p>preview 창 빈 공간에 마우스 우클릭을 하게되면 HTML로 복사가 가능하다는 사실!</p>
-<h3 id="Link"><a href="#Link" class="headerlink" title="Link"></a>Link</h3><ol>
-<li><a href="https://www.portent.com/blog/content-strategy/atom-markdown.htm" target="_blank" rel="noopener">How to Set Up &amp; Use Atom as a Markdown Editor</a></li>
-<li><a href="https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet" target="_blank" rel="noopener">Markdown Cheatsheet</a></li>
-<li><a href="https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf" target="_blank" rel="noopener">Markdown Cheatsheet PDF</a></li>
+        <blockquote>
+<p>조건에 따라 다른 컴포넌트를 그리는 방법</p>
+</blockquote>
+<p>if 문을 통해 조건에 따라 다른 컴포넌트를 그릴 수 있습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">UserGreeting</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>h1<span class="token operator">></span>Welcome back<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">GuestGreeting</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>h1<span class="token operator">></span>Please sign up<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">Greeting</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> props<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span>isLoggedIn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token operator">&lt;</span>UserGreeting <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>GuestGreeting <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token comment" spellcheck="true">// Try changing to isLoggedIn={true}:</span>
+  <span class="token operator">&lt;</span>Greeting isLoggedIn<span class="token operator">=</span><span class="token punctuation">{</span><span class="token boolean">false</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>UserGreeting, GuestGreeting</code> 컴포넌트와 이를 조건에 따라 선택하는 <code>Greeting</code> 컴포넌트가 있습니다. 로그인 여부(<code>isLoggedIn</code> 속성)에 따라 두 컴포넌트 중 하나가 그려지게 됩니다.</p>
+<h3 id="Element-Variables"><a href="#Element-Variables" class="headerlink" title="Element Variables"></a>Element Variables</h3><p>요소를 저장하기 위해 변수를 사용할 수 있습니다. 변수에 if 조건에 따라 컴포넌트를 저장하고 이를 그리는데 사용합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">LoginButton</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>onClick<span class="token punctuation">}</span><span class="token operator">></span>
+      Login
+    <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">LogoutButton</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>onClick<span class="token punctuation">}</span><span class="token operator">></span>
+      Logout
+    <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">LoginControl</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">handleLoginClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">handleLogoutClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
+
+    <span class="token keyword">const</span> button <span class="token operator">=</span> isLoggedIn <span class="token operator">?</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>LogoutButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>LoginButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span>Greeting isLoggedIn<span class="token operator">=</span><span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token punctuation">{</span>button<span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>LoginControl <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>button</code> 이라는 변수에 <code>isLoggedIn</code> 의 값(true/false)에 따라 서로 다른 컴포넌트를 저장합니다. <code>isLoggedIn</code> 변수는 <strong>state 객체에 속한 값</strong>으로 <code>button</code> 컴포넌트의 <code>onClick</code> 이벤트에 따라 변경되며, 변경될 때 마다 <code>render</code> 메서드를 호출하여 <code>isLoggedIn</code> 값에 따른 컴포넌트를 다시 그려주게 됩니다.</p>
+<p>혹시 더 간결한 문법이 있을까요? 여기 그 방법이 있습니다.</p>
+<h3 id="amp-amp-논리-연산자를-이용한-inline-if"><a href="#amp-amp-논리-연산자를-이용한-inline-if" class="headerlink" title="&amp;&amp; 논리 연산자를 이용한 inline if"></a>&amp;&amp; 논리 연산자를 이용한 inline if</h3><p>조건에 따라 다른 요소를 넣기 위해 논리 연산자인 <code>&amp;&amp;</code> 를 사용합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Mailbox</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> unreadMessages <span class="token operator">=</span> props<span class="token punctuation">.</span>unreadMessages<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token operator">&lt;</span>h1<span class="token operator">></span>Hello<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
+      <span class="token punctuation">{</span>unreadMessages<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span>
+        <span class="token operator">&lt;</span>h2<span class="token operator">></span>
+          You have <span class="token punctuation">{</span>unreadMessages<span class="token punctuation">.</span>length<span class="token punctuation">}</span> unread messages<span class="token punctuation">.</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
+      <span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> messages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'React'</span><span class="token punctuation">,</span> <span class="token string">'Re: React'</span><span class="token punctuation">,</span> <span class="token string">'Re:Re: React'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Mailbox unreadMessages<span class="token operator">=</span><span class="token punctuation">{</span>messages<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p><code>&amp;&amp;</code> 의 왼쪽 조건이 <strong>참</strong>이면 오른쪽의 요소가 그려지고 <strong>거짓</strong>이면 아무것도 그려지지 않게 됩니다.</p>
+<h3 id="조건-연산자를-이용한-inline-if"><a href="#조건-연산자를-이용한-inline-if" class="headerlink" title="조건 연산자를 이용한 inline if"></a>조건 연산자를 이용한 inline if</h3><p>조건 연산자인 <code>condition ? true : false</code>를 사용합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      The user is <span class="token operator">&lt;</span>b<span class="token operator">></span><span class="token punctuation">{</span>isLoggedIn <span class="token operator">?</span> <span class="token string">'currently'</span> <span class="token punctuation">:</span> <span class="token string">'not'</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>b<span class="token operator">></span> logged <span class="token keyword">in</span><span class="token punctuation">.</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>긴 표현식에도 사용이 가능합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token punctuation">{</span>isLoggedIn <span class="token operator">?</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>LogoutButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>
+        <span class="token operator">&lt;</span>LoginButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>여러분은 가독성을 고려하여 어떤 방법을 쓸지 결정할 수 있을 것입니다. 만약 조건이 복잡해지기 시작한다면 컴포넌트를 분리해야 할 때임을 기억하세요.</p>
+<h3 id="컴포넌트를-그리지-말아야-하는-경우"><a href="#컴포넌트를-그리지-말아야-하는-경우" class="headerlink" title="컴포넌트를 그리지 말아야 하는 경우"></a>컴포넌트를 그리지 말아야 하는 경우</h3><p>조건에 따라 그릴 요소를 반환해야 하지만 그릴 필요가 없는 조건에서는 <code>null</code>을 반환하면 됩니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">WarningBanner</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>props<span class="token punctuation">.</span>warn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"warning"</span><span class="token operator">></span>
+      Warning<span class="token operator">!</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">class</span> <span class="token class-name">Page</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
+  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>showWarning<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span>handleToggleClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleToggleClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">handleToggleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span>prevState <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
+      showWarning<span class="token punctuation">:</span> <span class="token operator">!</span>prevState<span class="token punctuation">.</span>showWarning
+    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+
+  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token punctuation">(</span>
+      <span class="token operator">&lt;</span>div<span class="token operator">></span>
+        <span class="token operator">&lt;</span>WarningBanner warn<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>showWarning<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleToggleClick<span class="token punctuation">}</span><span class="token operator">></span>
+          <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>showWarning <span class="token operator">?</span> <span class="token string">'Hide'</span> <span class="token punctuation">:</span> <span class="token string">'Show'</span><span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>Page <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>위 예제에서 <code>WarningBanner</code>는 속성으로 전달받은 <code>warn</code>값에 따라 요소를 그리거나 또는 <code>null</code>을 반환할 수 있습니다.(아무것도 그리지 않겠다는 의미입니다.) 컴포넌트의 <code>render</code> 메서드에서 <code>null</code>을 반환하는 것이 <strong>lifecycle</strong>에 영향을 주지는 않습니다. <code>componentWillUpdate</code>와 <code>componentDidUpdate</code>메서드는 정상적으로 호출 될 것입니다.</p>
+<h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><ol>
+<li>공식 문서 <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank" rel="noopener">view</a></li>
 </ol>
 
     
@@ -535,7 +680,7 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/03/31/20180331_mordern_javascript/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/05/13/self-help-5-2/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -549,7 +694,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2018/03/24/20180324_yeoman/" id="post_nav-older" class="next-content">
+        <a href="/2018/05/07/self-help-5-1/" id="post_nav-older" class="next-content">
             Older
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
