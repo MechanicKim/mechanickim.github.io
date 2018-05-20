@@ -12,7 +12,7 @@
     
     <title>
         
-            React - 8.Conditional Rendering | 
+            React - 9.Lists and Keys | 
         
         Jason의 개발자 블로그
     </title>
@@ -67,18 +67,18 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="https://mechanickim.github.io">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="React - 8.Conditional Rendering | Jason의 개발자 블로그">
+    <meta property="og:title" content="React - 9.Lists and Keys | Jason의 개발자 블로그">
     <meta property="og:image" content="/img/favicon.png" />
     <meta property="og:description" content="">
     <meta property="og:article:tag" content="React"> 
 
     
-        <meta property="article:published_time" content="May 12, 2018" />
-        <meta property="article:modified_time" content="May 12, 2018" />
+        <meta property="article:published_time" content="May 19, 2018" />
+        <meta property="article:modified_time" content="May 19, 2018" />
     
 
     <!-- The Twitter Card protocol -->
-    <meta name="twitter:title" content="React - 8.Conditional Rendering | Jason의 개발자 블로그">
+    <meta name="twitter:title" content="React - 9.Lists and Keys | Jason의 개발자 블로그">
     <meta name="twitter:description" content="">
     <meta name="twitter:image" content="/img/favicon.png">
     <meta name="twitter:card" content="summary_large_image" />
@@ -86,7 +86,7 @@
 
     <!-- Add canonical link for SEO -->
     
-        <link rel="canonical" href="https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html" />
+        <link rel="canonical" href="https://mechanickim.github.io/2018/05/19/react-9-lists-keys/index.html" />
     
 
     <!-- Structured-data for SEO -->
@@ -112,10 +112,10 @@
         },
         "description": "I'm glad you're here :-)"
     },
-    "headline": "React - 8.Conditional Rendering",
-    "url": "https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html",
-    "datePublished": "May 12, 2018",
-    "dateModified": "May 12, 2018",
+    "headline": "React - 9.Lists and Keys",
+    "url": "https://mechanickim.github.io/2018/05/19/react-9-lists-keys/index.html",
+    "datePublished": "May 19, 2018",
+    "dateModified": "May 19, 2018",
     "description": "",
     "mainEntityOfPage": {
         "@type": "WebPage",
@@ -337,7 +337,7 @@
 
     
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn" style="max-height:80vh; overflow-y:scroll;">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Element-Variables"><span class="post-toc-number">1.</span> <span class="post-toc-text">Element Variables</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#amp-amp-논리-연산자를-이용한-inline-if"><span class="post-toc-number">2.</span> <span class="post-toc-text">&amp;&amp; 논리 연산자를 이용한 inline if</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#조건-연산자를-이용한-inline-if"><span class="post-toc-number">3.</span> <span class="post-toc-text">조건 연산자를 이용한 inline if</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#컴포넌트를-그리지-말아야-하는-경우"><span class="post-toc-number">4.</span> <span class="post-toc-text">컴포넌트를 그리지 말아야 하는 경우</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Links"><span class="post-toc-number">5.</span> <span class="post-toc-text">Links</span></a></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#다수의-컴포넌트-그리기"><span class="post-toc-number">1.</span> <span class="post-toc-text">다수의 컴포넌트 그리기</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#기본-리스트-컴포넌트"><span class="post-toc-number">2.</span> <span class="post-toc-text">기본 리스트 컴포넌트</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Keys"><span class="post-toc-number">3.</span> <span class="post-toc-text">Keys</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Key-컴포넌트-추출하기"><span class="post-toc-number">4.</span> <span class="post-toc-text">Key 컴포넌트 추출하기</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Key는-서로-고유해야-한다"><span class="post-toc-number">5.</span> <span class="post-toc-text">Key는 서로 고유해야 한다</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#JSX에-map-함수-내장하기"><span class="post-toc-number">6.</span> <span class="post-toc-text">JSX에 map 함수 내장하기</span></a></li><li class="post-toc-item post-toc-level-3"><a class="post-toc-link" href="#Links"><span class="post-toc-number">7.</span> <span class="post-toc-text">Links</span></a></li></ol>
         <!--
         <li class="mdl-menu__item">
             Some Action
@@ -366,7 +366,7 @@
         <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/images/react.png)">
     
             <p class="article-headline-p">
-                React - 8.Conditional Rendering
+                React - 9.Lists and Keys
             </p>
         </div>
 
@@ -385,7 +385,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>Jason</strong>
-        <span>May 12, 2018</span>
+        <span>May 19, 2018</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -428,7 +428,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React - 8.Conditional Rendering&url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html&via=Jason" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=React - 9.Lists and Keys&url=https://mechanickim.github.io/2018/05/19/react-9-lists-keys/index.html&via=Jason" target="_blank">
             <li class="mdl-menu__item">
                 Share to Twitter
             </li>
@@ -437,7 +437,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=https://mechanickim.github.io/2018/05/19/react-9-lists-keys/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Facebook
             </li>
@@ -446,7 +446,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=https://mechanickim.github.io/2018/05/19/react-9-lists-keys/index.html" target="_blank">
             <li class="mdl-menu__item">
                 Share to Google+
             </li>
@@ -455,7 +455,7 @@
 
     <!-- Share LinkedIn -->
     
-        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html&title=React - 8.Conditional Rendering" target="_blank">
+        <a class="post_share-link" href="https://www.linkedin.com/shareArticle?mini=true&url=https://mechanickim.github.io/2018/05/19/react-9-lists-keys/index.html&title=React - 9.Lists and Keys" target="_blank">
             <li class="mdl-menu__item">
                 Share to LinkedIn
             </li>
@@ -467,7 +467,7 @@
 
     <!-- Share Telegram -->
     
-        <a class="post_share-link" href="https://telegram.me/share/url?url=https://mechanickim.github.io/2018/05/12/react-8-conditional-rendering/index.html&text=React - 8.Conditional Rendering" target="_blank">
+        <a class="post_share-link" href="https://telegram.me/share/url?url=https://mechanickim.github.io/2018/05/19/react-9-lists-keys/index.html&text=React - 9.Lists and Keys" target="_blank">
             <li class="mdl-menu__item">
                 Share to Telegram
             </li>
@@ -483,183 +483,206 @@
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
         <blockquote>
-<p>조건에 따라 다른 컴포넌트를 그리는 방법</p>
+<p>리스트를 다루는 법</p>
 </blockquote>
-<p>if 문을 통해 조건에 따라 다른 컴포넌트를 그릴 수 있습니다.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">UserGreeting</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token operator">&lt;</span>h1<span class="token operator">></span>Welcome back<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">function</span> <span class="token function">GuestGreeting</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token operator">&lt;</span>h1<span class="token operator">></span>Please sign up<span class="token punctuation">.</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">function</span> <span class="token function">Greeting</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> props<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span>isLoggedIn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token operator">&lt;</span>UserGreeting <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-  <span class="token keyword">return</span> <span class="token operator">&lt;</span>GuestGreeting <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
+<p>우리는 map 함수를 사용하여 기존 배열에서 새로운 배열을 만들어 낼 수 있습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> doubled <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span> number <span class="token operator">*</span> <span class="token number">2</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+console<span class="token punctuation">.</span><span class="token function">log</span><span class="token punctuation">(</span>doubled<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>콘솔에 출력되는 결과는 <strong>2, 4, 6, 8, 10</strong>일 것입니다. React에서는 요소들의 리스트를 위해 배열을 활용합니다.</p>
+<h3 id="다수의-컴포넌트-그리기"><a href="#다수의-컴포넌트-그리기" class="headerlink" title="다수의 컴포넌트 그리기"></a>다수의 컴포넌트 그리기</h3><p>아래 예제에서는 map 함수를 통해 숫자 배열에서 각 숫자를 텍스트로 가지는 <code>li</code>요소들의 리스트를 생성하고 이를 그립니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> listItems <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>li<span class="token operator">></span><span class="token punctuation">{</span>number<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
 
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
-  <span class="token comment" spellcheck="true">// Try changing to isLoggedIn={true}:</span>
-  <span class="token operator">&lt;</span>Greeting isLoggedIn<span class="token operator">=</span><span class="token punctuation">{</span><span class="token boolean">false</span><span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  <span class="token operator">&lt;</span>ul<span class="token operator">></span><span class="token punctuation">{</span>listItems<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span><span class="token punctuation">,</span>
   document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><code>UserGreeting, GuestGreeting</code> 컴포넌트와 이를 조건에 따라 선택하는 <code>Greeting</code> 컴포넌트가 있습니다. 로그인 여부(<code>isLoggedIn</code> 속성)에 따라 두 컴포넌트 중 하나가 그려지게 됩니다.</p>
-<h3 id="Element-Variables"><a href="#Element-Variables" class="headerlink" title="Element Variables"></a>Element Variables</h3><p>요소를 저장하기 위해 변수를 사용할 수 있습니다. 변수에 if 조건에 따라 컴포넌트를 저장하고 이를 그리는데 사용합니다.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">LoginButton</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+<p>결과는 1부터 5까지의 불릿 리스트가 보여질 것입니다.</p>
+<h3 id="기본-리스트-컴포넌트"><a href="#기본-리스트-컴포넌트" class="headerlink" title="기본 리스트 컴포넌트"></a>기본 리스트 컴포넌트</h3><p>숫자 배열을 받아들여 이를 리스트 요소로 반환하는 컴포넌트를 만들 수 있습니다. 이전 예제를 수정해 보겠습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">NumberList</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> numbers <span class="token operator">=</span> props<span class="token punctuation">.</span>numbers<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> listItems <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>li<span class="token operator">></span><span class="token punctuation">{</span>number<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>onClick<span class="token punctuation">}</span><span class="token operator">></span>
-      Login
-    <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
+    <span class="token operator">&lt;</span>ul<span class="token operator">></span><span class="token punctuation">{</span>listItems<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
   <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">function</span> <span class="token function">LogoutButton</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>onClick<span class="token punctuation">}</span><span class="token operator">></span>
-      Logout
-    <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-  <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">class</span> <span class="token class-name">LoginControl</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
-  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token function">handleLoginClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token function">handleLogoutClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">:</span> <span class="token boolean">false</span><span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
-
-    <span class="token keyword">const</span> button <span class="token operator">=</span> isLoggedIn <span class="token operator">?</span> <span class="token punctuation">(</span>
-      <span class="token operator">&lt;</span>LogoutButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-    <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>
-      <span class="token operator">&lt;</span>LoginButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token operator">&lt;</span>div<span class="token operator">></span>
-        <span class="token operator">&lt;</span>Greeting isLoggedIn<span class="token operator">=</span><span class="token punctuation">{</span>isLoggedIn<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-        <span class="token punctuation">{</span>button<span class="token punctuation">}</span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
+<span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
-  <span class="token operator">&lt;</span>LoginControl <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  <span class="token operator">&lt;</span>NumberList numbers<span class="token operator">=</span><span class="token punctuation">{</span>numbers<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
   document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><code>button</code> 이라는 변수에 <code>isLoggedIn</code> 의 값(true/false)에 따라 서로 다른 컴포넌트를 저장합니다. <code>isLoggedIn</code> 변수는 <strong>state 객체에 속한 값</strong>으로 <code>button</code> 컴포넌트의 <code>onClick</code> 이벤트에 따라 변경되며, 변경될 때 마다 <code>render</code> 메서드를 호출하여 <code>isLoggedIn</code> 값에 따른 컴포넌트를 다시 그려주게 됩니다.</p>
-<p>혹시 더 간결한 문법이 있을까요? 여기 그 방법이 있습니다.</p>
-<h3 id="amp-amp-논리-연산자를-이용한-inline-if"><a href="#amp-amp-논리-연산자를-이용한-inline-if" class="headerlink" title="&amp;&amp; 논리 연산자를 이용한 inline if"></a>&amp;&amp; 논리 연산자를 이용한 inline if</h3><p>조건에 따라 다른 요소를 넣기 위해 논리 연산자인 <code>&amp;&amp;</code> 를 사용합니다.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Mailbox</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> unreadMessages <span class="token operator">=</span> props<span class="token punctuation">.</span>unreadMessages<span class="token punctuation">;</span>
+<p>이 코드를 돌려보면 아무런 문제가 없을 것 같지만 리스트 각 항목에 <strong>key</strong>가 주어져야 한다는 경고를 받게 될 것입니다. <strong>key</strong>는 특별한 문자열 속성으로 리스트의 각 항목에 주어져야 합니다. 예제를 다시 수정해 보겠습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">NumberList</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> numbers <span class="token operator">=</span> props<span class="token punctuation">.</span>numbers<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> listItems <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>number<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>
+      <span class="token punctuation">{</span>number<span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token operator">&lt;</span>h1<span class="token operator">></span>Hello<span class="token operator">!</span><span class="token operator">&lt;</span><span class="token operator">/</span>h1<span class="token operator">></span>
-      <span class="token punctuation">{</span>unreadMessages<span class="token punctuation">.</span>length <span class="token operator">></span> <span class="token number">0</span> <span class="token operator">&amp;&amp;</span>
-        <span class="token operator">&lt;</span>h2<span class="token operator">></span>
-          You have <span class="token punctuation">{</span>unreadMessages<span class="token punctuation">.</span>length<span class="token punctuation">}</span> unread messages<span class="token punctuation">.</span>
-        <span class="token operator">&lt;</span><span class="token operator">/</span>h2<span class="token operator">></span>
-      <span class="token punctuation">}</span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token operator">&lt;</span>ul<span class="token operator">></span><span class="token punctuation">{</span>listItems<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
   <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">const</span> messages <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">'React'</span><span class="token punctuation">,</span> <span class="token string">'Re: React'</span><span class="token punctuation">,</span> <span class="token string">'Re:Re: React'</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
-  <span class="token operator">&lt;</span>Mailbox unreadMessages<span class="token operator">=</span><span class="token punctuation">{</span>messages<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  <span class="token operator">&lt;</span>NumberList numbers<span class="token operator">=</span><span class="token punctuation">{</span>numbers<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
   document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p><code>&amp;&amp;</code> 의 왼쪽 조건이 <strong>참</strong>이면 오른쪽의 요소가 그려지고 <strong>거짓</strong>이면 아무것도 그려지지 않게 됩니다.</p>
-<h3 id="조건-연산자를-이용한-inline-if"><a href="#조건-연산자를-이용한-inline-if" class="headerlink" title="조건 연산자를 이용한 inline if"></a>조건 연산자를 이용한 inline if</h3><p>조건 연산자인 <code>condition ? true : false</code>를 사용합니다.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
+<p><code>map</code> 함수 내에서 <code>li</code>의 속성으로 <code>key</code>를 넣어주었습니다.</p>
+<h3 id="Keys"><a href="#Keys" class="headerlink" title="Keys"></a>Keys</h3><p>Keys는 리스트의 특정 항목의 <strong>수정, 추가, 또는 삭제</strong>를 하는데 도움을 줍니다. 이런 작업을 위해 각 항목의 key는 <strong>id와 같은 고유한 값</strong>이어야 합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+<span class="token keyword">const</span> listItems <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>number<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>
+    <span class="token punctuation">{</span>number<span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>이러한 고유한 값을 주기 위해 리스트를 이루는 데이터에서 고유한 값을 사용할 수 있습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> todoItems <span class="token operator">=</span> todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>todo<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>todo<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token operator">></span>
+    <span class="token punctuation">{</span>todo<span class="token punctuation">.</span>text<span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>데이터에서 고유한 값을 가져올 수 없는 경우 map함수를 통해 받는 index를 사용할 수도 있습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> todoItems <span class="token operator">=</span> todos<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>todo<span class="token punctuation">,</span> index<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+  <span class="token comment" spellcheck="true">// Only do this if items have no stable IDs</span>
+  <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>index<span class="token punctuation">}</span><span class="token operator">></span>
+    <span class="token punctuation">{</span>todo<span class="token punctuation">.</span>text<span class="token punctuation">}</span>
+  <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>하지만 항목의 순서가 변경되는 경우를 고려할 때 index를 사용하는 방식은 권장하지 않습니다. 이는 성능에 부정적인 영향을 줄 수 있으며 컴포넌트의 상태이슈를 유발할 수 있기 때문입니다. 만약 key값을 명시하지 않은 경우에는 React는 index값을 기본으로 할당하게 됩니다.</p>
+<h3 id="Key-컴포넌트-추출하기"><a href="#Key-컴포넌트-추출하기" class="headerlink" title="Key 컴포넌트 추출하기"></a>Key 컴포넌트 추출하기</h3><p>만약 리스트의 각 항목을 <code>ListItem</code> 컴포넌트로 추출하여 만든다면 컴포넌트를 이루는 <code>li</code> 요소가 아닌 <code>ListItem</code> 컴포넌트에 <code>key</code>를 지정해야 합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 잘못된 key 사용</span>
+<span class="token keyword">function</span> <span class="token function">ListItem</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> value <span class="token operator">=</span> props<span class="token punctuation">.</span>value<span class="token punctuation">;</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      The user is <span class="token operator">&lt;</span>b<span class="token operator">></span><span class="token punctuation">{</span>isLoggedIn <span class="token operator">?</span> <span class="token string">'currently'</span> <span class="token punctuation">:</span> <span class="token string">'not'</span><span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>b<span class="token operator">></span> logged <span class="token keyword">in</span><span class="token punctuation">.</span>
-    <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
+    <span class="token comment" spellcheck="true">// Wrong! There is no need to specify the key here:</span>
+    <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>value<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span><span class="token operator">></span>
+      <span class="token punctuation">{</span>value<span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
   <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
-</code></pre>
-<p>긴 표현식에도 사용이 가능합니다.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">const</span> isLoggedIn <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>isLoggedIn<span class="token punctuation">;</span>
+
+<span class="token keyword">function</span> <span class="token function">NumberList</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> numbers <span class="token operator">=</span> props<span class="token punctuation">.</span>numbers<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> listItems <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+    <span class="token comment" spellcheck="true">// Wrong! The key should have been specified here:</span>
+    <span class="token operator">&lt;</span>ListItem value<span class="token operator">=</span><span class="token punctuation">{</span>number<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div<span class="token operator">></span>
-      <span class="token punctuation">{</span>isLoggedIn <span class="token operator">?</span> <span class="token punctuation">(</span>
-        <span class="token operator">&lt;</span>LogoutButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLogoutClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-      <span class="token punctuation">)</span> <span class="token punctuation">:</span> <span class="token punctuation">(</span>
-        <span class="token operator">&lt;</span>LoginButton onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleLoginClick<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>ul<span class="token operator">></span>
+      <span class="token punctuation">{</span>listItems<span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>NumberList numbers<span class="token operator">=</span><span class="token punctuation">{</span>numbers<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token comment" spellcheck="true">// 올바른 key 사용</span>
+<span class="token keyword">function</span> <span class="token function">ListItem</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token comment" spellcheck="true">// Correct! There is no need to specify the key here:</span>
+  <span class="token keyword">return</span> <span class="token operator">&lt;</span>li<span class="token operator">></span><span class="token punctuation">{</span>props<span class="token punctuation">.</span>value<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">function</span> <span class="token function">NumberList</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> numbers <span class="token operator">=</span> props<span class="token punctuation">.</span>numbers<span class="token punctuation">;</span>
+  <span class="token keyword">const</span> listItems <span class="token operator">=</span> numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+    <span class="token comment" spellcheck="true">// Correct! Key should be specified inside the array.</span>
+    <span class="token operator">&lt;</span>ListItem key<span class="token operator">=</span><span class="token punctuation">{</span>number<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+              value<span class="token operator">=</span><span class="token punctuation">{</span>number<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>ul<span class="token operator">></span>
+      <span class="token punctuation">{</span>listItems<span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">const</span> numbers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span><span class="token punctuation">;</span>
+ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
+  <span class="token operator">&lt;</span>NumberList numbers<span class="token operator">=</span><span class="token punctuation">{</span>numbers<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<h3 id="Key는-서로-고유해야-한다"><a href="#Key는-서로-고유해야-한다" class="headerlink" title="Key는 서로 고유해야 한다"></a>Key는 서로 고유해야 한다</h3><p>배열 내에서 사용되는 키는 서로 고유해야 합니다. 서로 다른 배열에서 고유할 필요는 없습니다. 다음 예제에서 서로 다른 배열에 동일한 <code>post.id</code>를 사용한 것을 확인할 수 있습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">Blog</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> sidebar <span class="token operator">=</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>ul<span class="token operator">></span>
+      <span class="token punctuation">{</span>props<span class="token punctuation">.</span>posts<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>post<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>li key<span class="token operator">=</span><span class="token punctuation">{</span>post<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token operator">></span>
+          <span class="token punctuation">{</span>post<span class="token punctuation">.</span>title<span class="token punctuation">}</span>
+        <span class="token operator">&lt;</span><span class="token operator">/</span>li<span class="token operator">></span>
       <span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+  <span class="token keyword">const</span> content <span class="token operator">=</span> props<span class="token punctuation">.</span>posts<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>post<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+    <span class="token operator">&lt;</span>div key<span class="token operator">=</span><span class="token punctuation">{</span>post<span class="token punctuation">.</span>id<span class="token punctuation">}</span><span class="token operator">></span>
+      <span class="token operator">&lt;</span>h3<span class="token operator">></span><span class="token punctuation">{</span>post<span class="token punctuation">.</span>title<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">></span>
+      <span class="token operator">&lt;</span>p<span class="token operator">></span><span class="token punctuation">{</span>post<span class="token punctuation">.</span>content<span class="token punctuation">}</span><span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">></span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
   <span class="token punctuation">)</span><span class="token punctuation">;</span>
-<span class="token punctuation">}</span>
-</code></pre>
-<p>여러분은 가독성을 고려하여 어떤 방법을 쓸지 결정할 수 있을 것입니다. 만약 조건이 복잡해지기 시작한다면 컴포넌트를 분리해야 할 때임을 기억하세요.</p>
-<h3 id="컴포넌트를-그리지-말아야-하는-경우"><a href="#컴포넌트를-그리지-말아야-하는-경우" class="headerlink" title="컴포넌트를 그리지 말아야 하는 경우"></a>컴포넌트를 그리지 말아야 하는 경우</h3><p>조건에 따라 그릴 요소를 반환해야 하지만 그릴 필요가 없는 조건에서는 <code>null</code>을 반환하면 됩니다.</p>
-<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">WarningBanner</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-  <span class="token keyword">if</span> <span class="token punctuation">(</span><span class="token operator">!</span>props<span class="token punctuation">.</span>warn<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token keyword">null</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
   <span class="token keyword">return</span> <span class="token punctuation">(</span>
-    <span class="token operator">&lt;</span>div className<span class="token operator">=</span><span class="token string">"warning"</span><span class="token operator">></span>
-      Warning<span class="token operator">!</span>
+    <span class="token operator">&lt;</span>div<span class="token operator">></span>
+      <span class="token punctuation">{</span>sidebar<span class="token punctuation">}</span>
+      <span class="token operator">&lt;</span>hr <span class="token operator">/</span><span class="token operator">></span>
+      <span class="token punctuation">{</span>content<span class="token punctuation">}</span>
     <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
   <span class="token punctuation">)</span><span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token keyword">class</span> <span class="token class-name">Page</span> <span class="token keyword">extends</span> <span class="token class-name">React<span class="token punctuation">.</span>Component</span> <span class="token punctuation">{</span>
-  <span class="token function">constructor</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">super</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>state <span class="token operator">=</span> <span class="token punctuation">{</span>showWarning<span class="token punctuation">:</span> <span class="token boolean">true</span><span class="token punctuation">}</span><span class="token punctuation">;</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span>handleToggleClick <span class="token operator">=</span> <span class="token keyword">this</span><span class="token punctuation">.</span>handleToggleClick<span class="token punctuation">.</span><span class="token function">bind</span><span class="token punctuation">(</span><span class="token keyword">this</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token function">handleToggleClick</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span>prevState <span class="token operator">=</span><span class="token operator">></span> <span class="token punctuation">(</span><span class="token punctuation">{</span>
-      showWarning<span class="token punctuation">:</span> <span class="token operator">!</span>prevState<span class="token punctuation">.</span>showWarning
-    <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-
-  <span class="token function">render</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    <span class="token keyword">return</span> <span class="token punctuation">(</span>
-      <span class="token operator">&lt;</span>div<span class="token operator">></span>
-        <span class="token operator">&lt;</span>WarningBanner warn<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>showWarning<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
-        <span class="token operator">&lt;</span>button onClick<span class="token operator">=</span><span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>handleToggleClick<span class="token punctuation">}</span><span class="token operator">></span>
-          <span class="token punctuation">{</span><span class="token keyword">this</span><span class="token punctuation">.</span>state<span class="token punctuation">.</span>showWarning <span class="token operator">?</span> <span class="token string">'Hide'</span> <span class="token punctuation">:</span> <span class="token string">'Show'</span><span class="token punctuation">}</span>
-        <span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">></span>
-      <span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">></span>
-    <span class="token punctuation">)</span><span class="token punctuation">;</span>
-  <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
+<span class="token keyword">const</span> posts <span class="token operator">=</span> <span class="token punctuation">[</span>
+  <span class="token punctuation">{</span>id<span class="token punctuation">:</span> <span class="token number">1</span><span class="token punctuation">,</span> title<span class="token punctuation">:</span> <span class="token string">'Hello World'</span><span class="token punctuation">,</span> content<span class="token punctuation">:</span> <span class="token string">'Welcome to learning React!'</span><span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token punctuation">{</span>id<span class="token punctuation">:</span> <span class="token number">2</span><span class="token punctuation">,</span> title<span class="token punctuation">:</span> <span class="token string">'Installation'</span><span class="token punctuation">,</span> content<span class="token punctuation">:</span> <span class="token string">'You can install React from npm.'</span><span class="token punctuation">}</span>
+<span class="token punctuation">]</span><span class="token punctuation">;</span>
 ReactDOM<span class="token punctuation">.</span><span class="token function">render</span><span class="token punctuation">(</span>
-  <span class="token operator">&lt;</span>Page <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
+  <span class="token operator">&lt;</span>Blog posts<span class="token operator">=</span><span class="token punctuation">{</span>posts<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span><span class="token punctuation">,</span>
   document<span class="token punctuation">.</span><span class="token function">getElementById</span><span class="token punctuation">(</span><span class="token string">'root'</span><span class="token punctuation">)</span>
 <span class="token punctuation">)</span><span class="token punctuation">;</span>
 </code></pre>
-<p>위 예제에서 <code>WarningBanner</code>는 속성으로 전달받은 <code>warn</code>값에 따라 요소를 그리거나 또는 <code>null</code>을 반환할 수 있습니다.(아무것도 그리지 않겠다는 의미입니다.) 컴포넌트의 <code>render</code> 메서드에서 <code>null</code>을 반환하는 것이 <strong>lifecycle</strong>에 영향을 주지는 않습니다. <code>componentWillUpdate</code>와 <code>componentDidUpdate</code>메서드는 정상적으로 호출 될 것입니다.</p>
+<p><code>key</code>는 컴포넌트의 속성으로 전달되지 않아 내부에서 가져올 수 없습니다. 필요하다면 다른 속성을 명시하여 전달하도록 합니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">const</span> content <span class="token operator">=</span> posts<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>post<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+  <span class="token operator">&lt;</span>Post
+    key<span class="token operator">=</span><span class="token punctuation">{</span>post<span class="token punctuation">.</span>id<span class="token punctuation">}</span>
+    id<span class="token operator">=</span><span class="token punctuation">{</span>post<span class="token punctuation">.</span>id<span class="token punctuation">}</span>
+    title<span class="token operator">=</span><span class="token punctuation">{</span>post<span class="token punctuation">.</span>title<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<p>위 예제에서 Post 컴포넌트는 props.id는 읽을 수 있지만 props.key는 읽을 수 없습니다.</p>
+<h3 id="JSX에-map-함수-내장하기"><a href="#JSX에-map-함수-내장하기" class="headerlink" title="JSX에 map 함수 내장하기"></a>JSX에 map 함수 내장하기</h3><p><code>{}</code>를 사용하여 map함수를 JSX 안에 넣을 수 있습니다.</p>
+<pre class=" language-javascript"><code class="language-javascript"><span class="token keyword">function</span> <span class="token function">NumberList</span><span class="token punctuation">(</span>props<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+  <span class="token keyword">const</span> numbers <span class="token operator">=</span> props<span class="token punctuation">.</span>numbers<span class="token punctuation">;</span>
+  <span class="token keyword">return</span> <span class="token punctuation">(</span>
+    <span class="token operator">&lt;</span>ul<span class="token operator">></span>
+      <span class="token punctuation">{</span>numbers<span class="token punctuation">.</span><span class="token function">map</span><span class="token punctuation">(</span><span class="token punctuation">(</span>number<span class="token punctuation">)</span> <span class="token operator">=</span><span class="token operator">></span>
+        <span class="token operator">&lt;</span>ListItem key<span class="token operator">=</span><span class="token punctuation">{</span>number<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">}</span>
+                  value<span class="token operator">=</span><span class="token punctuation">{</span>number<span class="token punctuation">}</span> <span class="token operator">/</span><span class="token operator">></span>
+
+      <span class="token punctuation">)</span><span class="token punctuation">}</span>
+    <span class="token operator">&lt;</span><span class="token operator">/</span>ul<span class="token operator">></span>
+  <span class="token punctuation">)</span><span class="token punctuation">;</span>
+<span class="token punctuation">}</span>
+</code></pre>
+<p>이런 방식이 더 깔끔한 코드를 만들 수 있지만 남용되면 오히려 가독성이 떨어질 수 있으므로 과한 경우 따로 빼야 할 수도 있습니다.</p>
 <h3 id="Links"><a href="#Links" class="headerlink" title="Links"></a>Links</h3><ol>
-<li>공식 문서 <a href="https://reactjs.org/docs/conditional-rendering.html" target="_blank" rel="noopener">view</a></li>
+<li>공식 문서 <a href="https://reactjs.org/docs/lists-and-keys.html" target="_blank" rel="noopener">view</a></li>
 </ol>
 
     
@@ -680,7 +703,7 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2018/05/13/self-help-5-2/" id="post_nav-newer" class="prev-content">
+        <a href="/2018/05/20/self-help-6-1/" id="post_nav-newer" class="prev-content">
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
                 <i class="material-icons">arrow_back</i>
             </button>
@@ -694,7 +717,7 @@ ReactDOM<span class="token punctuation">.</span><span class="token function">ren
 
     <!-- Next Nav -->
     
-        <a href="/2018/05/07/self-help-5-1/" id="post_nav-older" class="next-content">
+        <a href="/2018/05/13/self-help-5-2/" id="post_nav-older" class="next-content">
             Older
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
