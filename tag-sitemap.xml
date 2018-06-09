@@ -100,22 +100,29 @@
     </url>
 
     <url>
-        <loc>https://mechanickim.github.io/tags/React/</loc>
-        <lastmod>2018-05-19T01:10:17.368Z</lastmod>
+        <loc>https://mechanickim.github.io/tags/Self-Help/</loc>
+        <lastmod>2018-05-21T14:09:49.904Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
         <loc>https://mechanickim.github.io/tags/Book/</loc>
-        <lastmod>2018-05-20T13:09:17.162Z</lastmod>
+        <lastmod>2018-06-09T03:16:33.365Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
 
     <url>
-        <loc>https://mechanickim.github.io/tags/Self-Help/</loc>
-        <lastmod>2018-05-20T13:09:17.162Z</lastmod>
+        <loc>https://mechanickim.github.io/tags/Leader/</loc>
+        <lastmod>2018-06-09T03:16:33.365Z</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.2</priority>
+    </url>
+
+    <url>
+        <loc>https://mechanickim.github.io/tags/React/</loc>
+        <lastmod>2018-06-09T04:41:57.043Z</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.2</priority>
     </url>
