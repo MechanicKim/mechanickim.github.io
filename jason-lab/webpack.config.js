@@ -9,7 +9,7 @@ module.exports = {
     path: path.resolve(__dirname, '../'),
   },
   resolve: {
-		extensions: ['.js', 'ts', '.jsx', '.tsx'],
+		extensions: ['.js', '.ts', '.jsx', '.tsx'],
 	},
   module: {
     rules: [
@@ -17,6 +17,10 @@ module.exports = {
         test: /\.tsx?$/,
         use: 'ts-loader',
         exclude: /node_modules/,
+      },
+      {
+        test: /\.css$/,
+        use: ['style-loader', 'css-loader', 'postcss-loader']
       },
     ],
   },
