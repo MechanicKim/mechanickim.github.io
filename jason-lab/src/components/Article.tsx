@@ -1,4 +1,5 @@
 import React from 'react';
+import UAParser from 'ua-parser-js';
 
 type TProps = {
   img: string;
@@ -7,7 +8,7 @@ type TProps = {
   desc: string;
 };
 
-function Article({ img, url, title, desc }: TProps) {
+function ArticleP({ img, url, title, desc }: TProps) {
   return (
     <article className="m-1 inline-block h-60 relative text-slate-100">
       <img className="h-60" src={img} />
@@ -19,4 +20,20 @@ function Article({ img, url, title, desc }: TProps) {
   );
 }
 
-export default Article;
+function ArticleM({ img, url, title, desc }: TProps) {
+  return (
+    <article className="my-1 inline-block w-full text-slate-100">
+      <img className="w-full" src={img} />
+      <div className="p-3 text-slate-100">
+        <a className="mb-2 block font-semibold text-lg hover:underline" href={url} target="_blank">{title}</a>
+        <p>{desc}</p>
+      </div>
+    </article>
+  );
+}
+
+export default function Article(props: TProps) {
+  const ua = new UAParser();
+  const { type } = ua.getDevice();
+  return type === 'mobile' ? <ArticleM {...props} /> : <ArticleP {...props} />;
+}
