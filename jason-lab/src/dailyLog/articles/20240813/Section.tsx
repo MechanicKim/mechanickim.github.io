@@ -1,18 +1,19 @@
 import React from 'react';
 
+import Container from '../../../components/SectionContainer';
 import SectionDate from '../../../components/SectionDate';
 import Article from '../../../components/Article';
 
 function Section() {
   return (
-    <section>
+    <Container>
       <SectionDate date="2024. 8. 13" />
-      <div className="flex flex-wrap">
+      <div>
         <Article
           img="https://climate.copernicus.eu/sites/default/files/inline-images/climpulse_map_era5_download_daily_2t_anomaly_20240723.png"
           url="https://climate.copernicus.eu/new-record-daily-global-average-temperature-reached-july-2024"
           title="New record daily global average temperature reached in July 2024"
-          desc="2024년 7월 22일이 지구 기록상 가장 뜨거운 날이었다고 한다. 중요한 것은 7월 말에 올라온 글이라는 것. 이후 기록이 깨지지 않았지만, 이대로 가다간 8월 중에 기록이 깨지지 않을까."
+          desc="2024년 7월 22일은 지구 기록상 가장 뜨거운 날이었다고 한다. 중요한 것은 7월 말에 올라온 글이라는 것. 이후 기록이 깨지지 않았지만, 8월 중에 기록이 깨지지 않을까."
         />
         <Article
           img="https://renew.terarosa.com:9000/store/thumb/store_t_83c3e233-d1d0-4cc2-803b-f3d1a886a472.png"
@@ -33,7 +34,7 @@ function Section() {
           desc="대표 맨몸 운동으로 이루어진 WOD. 풀업 5개, 푸쉬업 10개, 스쿼트 15개가 한 라운드다. 일주일에 3번 정도 집에서 10 라운드를 한다.(아직 어깨에 무리가 있어 풀업은 3개를 하고 있다)"
         />
       </div>
-    </section>
+    </Container>
   );
 }
 

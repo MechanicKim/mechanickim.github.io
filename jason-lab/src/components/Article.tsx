@@ -17,19 +17,19 @@ function ArticleP({ img, url, title, desc }: TProps) {
 
   if (error) {
     return (
-      <article className="m-1 p-3 h-60 w-80 border border-slate-200 border-opacity-30">
-        <a className="mb-2 block font-semibold text-lg text-slate-50 hover:underline" href={url} target="_blank">{title}</a>
-        <p className="text-slate-100">{desc}</p>
+      <article className="my-1">
+        <a className="mb-2 block font-semibold text-lg text-slate-800 hover:underline" href={url} target="_blank">{title}</a>
+        <p className="text-slate-800">{desc}</p>
       </article>
     );
   }
 
   return (
-    <article className="m-1 h-60 relative">
-      <img className="h-60" src={img} onError={onError} />
-      <div className="p-3 absolute left-0 top-0 w-full h-full bg-black opacity-0 hover:opacity-75">
-        <a className="mb-2 block font-semibold text-lg text-slate-50 hover:underline" href={url} target="_blank">{title}</a>
-        <p className="text-slate-100">{desc}</p>
+    <article className="my-1 flex">
+      <img className="h-56 w-72 object-cover" src={img} onError={onError} />
+      <div className="ml-2 flex-1">
+        <a className="mb-2 block font-semibold text-lg text-slate-800 hover:underline" href={url} target="_blank">{title}</a>
+        <p className="text-slate-800">{desc}</p>
       </div>
     </article>
   );
@@ -45,9 +45,9 @@ function ArticleM({ img, url, title, desc }: TProps) {
   return (
     <article className="my-1 w-full">
       {!error &&  <img className="w-full" src={img} onError={onError} />}
-      <div className="p-3">
-        <a className="mb-2 block font-semibold text-lg text-slate-50" href={url} target="_blank">{title}</a>
-        <p className="text-slate-100">{desc}</p>
+      <div>
+        <a className="my-2 block font-semibold text-lg text-slate-800" href={url} target="_blank">{title}</a>
+        <p className="text-slate-800">{desc}</p>
       </div>
     </article>
   );
