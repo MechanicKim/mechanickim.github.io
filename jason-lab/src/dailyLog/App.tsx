@@ -1,14 +1,13 @@
 import React from 'react';
-import './index.css';
+import '../index.css';
 
+import Header from '../components/Header';
 import Articles from './articles/Articles';
 
 function App() {
   return (
     <>
-      <header>
-        <h4 className="p-3 text-slate-100 font-semibold">Daily Log</h4>
-      </header>
+      <Header title="Daily Log" />
       <main className="p-3">
         <Articles />
       </main>

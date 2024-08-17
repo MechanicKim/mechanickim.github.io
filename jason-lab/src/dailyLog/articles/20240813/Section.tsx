@@ -1,12 +1,13 @@
 import React from 'react';
 
-import Article from '../../components/Article';
+import SectionDate from '../../../components/SectionDate';
+import Article from '../../../components/Article';
 
 function Section() {
   return (
     <section>
-      <h4 className="mb-2 text-slate-100">2024. 8. 13</h4>
-      <div>
+      <SectionDate date="2024. 8. 13" />
+      <div className="flex flex-wrap">
         <Article
           img="https://climate.copernicus.eu/sites/default/files/inline-images/climpulse_map_era5_download_daily_2t_anomaly_20240723.png"
           url="https://climate.copernicus.eu/new-record-daily-global-average-temperature-reached-july-2024"

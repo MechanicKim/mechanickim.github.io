@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import UAParser from 'ua-parser-js';
 
 type TProps = {
@@ -9,24 +9,45 @@ type TProps = {
 };
 
 function ArticleP({ img, url, title, desc }: TProps) {
+  const [error, setError] = useState(false);
+
+  const onError = () => {
+    setError(true);
+  };
+
+  if (error) {
+    return (
+      <article className="m-1 p-3 h-60 w-80 border border-slate-200 border-opacity-30">
+        <a className="mb-2 block font-semibold text-lg text-slate-50 hover:underline" href={url} target="_blank">{title}</a>
+        <p className="text-slate-100">{desc}</p>
+      </article>
+    );
+  }
+
   return (
-    <article className="m-1 inline-block h-60 relative text-slate-100">
-      <img className="h-60" src={img} />
-      <div className="p-3 absolute left-0 top-0 w-full h-full bg-slate-900 opacity-0 hover:opacity-90">
-        <a className="mb-2 block font-semibold text-lg hover:underline" href={url} target="_blank">{title}</a>
-        <p>{desc}</p>
+    <article className="m-1 h-60 relative">
+      <img className="h-60" src={img} onError={onError} />
+      <div className="p-3 absolute left-0 top-0 w-full h-full bg-black opacity-0 hover:opacity-75">
+        <a className="mb-2 block font-semibold text-lg text-slate-50 hover:underline" href={url} target="_blank">{title}</a>
+        <p className="text-slate-100">{desc}</p>
       </div>
     </article>
   );
 }
 
 function ArticleM({ img, url, title, desc }: TProps) {
+  const [error, setError] = useState(false);
+
+  const onError = () => {
+    setError(true);
+  };
+
   return (
-    <article className="my-1 inline-block w-full text-slate-100">
-      <img className="w-full" src={img} />
-      <div className="p-3 text-slate-100">
-        <a className="mb-2 block font-semibold text-lg hover:underline" href={url} target="_blank">{title}</a>
-        <p>{desc}</p>
+    <article className="my-1 w-full">
+      {!error &&  <img className="w-full" src={img} onError={onError} />}
+      <div className="p-3">
+        <a className="mb-2 block font-semibold text-lg text-slate-50" href={url} target="_blank">{title}</a>
+        <p className="text-slate-100">{desc}</p>
       </div>
     </article>
   );
