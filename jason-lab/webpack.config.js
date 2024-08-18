@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    bundle: path.resolve(__dirname, 'src', 'index.tsx'),
+    ['dailyLog/bundle']: path.resolve(__dirname, 'src', 'dailyLog', 'index.tsx'),
   },
   output: {
     path: path.resolve(__dirname, '../'),
@@ -39,7 +39,7 @@ module.exports = {
   },
   plugins: [
 		new HtmlWebpackPlugin({
-			template: path.resolve(__dirname, 'src', 'index.html'),
+			template: path.resolve(__dirname, 'src', 'dailyLog', 'index.html'),
 		}),
 	],
 };

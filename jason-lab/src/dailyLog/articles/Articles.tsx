@@ -1,10 +1,12 @@
 import React from 'react';
 import Section20240813 from './20240813/Section';
 import Section20240814 from './20240814/Section';
+import Section20240818 from './20240818/Section';
 
 function Articles() {
   return (
     <div className="flex-1 overflow-y-auto">
+      <Section20240818 />
       <Section20240814 />
       <Section20240813 />
     </div>

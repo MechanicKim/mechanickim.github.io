@@ -27,7 +27,7 @@ function ArticleP({ img, url, title, desc }: TProps) {
   return (
     <article className="my-1 flex">
       <img className="h-56 w-72 object-cover" src={img} onError={onError} />
-      <div className="ml-2 flex-1">
+      <div className="ml-4 flex-1">
         <a className="mb-2 block font-semibold text-lg text-slate-800 hover:underline" href={url} target="_blank">{title}</a>
         <p className="text-slate-800">{desc}</p>
       </div>
