@@ -3,7 +3,7 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    ['dailyLog/bundle']: path.resolve(__dirname, 'src', 'dailyLog', 'index.tsx'),
+    ['bundle/dailyLog']: path.resolve(__dirname, 'src', 'dailyLog', 'index.tsx'),
   },
   output: {
     path: path.resolve(__dirname, '../'),
@@ -39,6 +39,8 @@ module.exports = {
   },
   plugins: [
 		new HtmlWebpackPlugin({
+      filename: 'dailyLog.html',
+      publicPath: './',
 			template: path.resolve(__dirname, 'src', 'dailyLog', 'index.html'),
 		}),
 	],
