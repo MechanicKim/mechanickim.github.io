@@ -7,8 +7,14 @@ import Article from '../../../components/Article';
 function Section() {
   return (
     <Container>
-      <SectionDate date="2024. 8. 14" />
+      <SectionDate date="2024. 8. 18" />
       <div>
+        <Article
+          img="https://cdn.imweb.me/upload/S2019102245c24fbf206f3/a8d4b8e6d23c2.png"
+          url="/shop/masmarulez.html"
+          title="Masmarulez [마스마룰즈]"
+          desc="아임웹 사이트 가져와 다시 만들어보기 1"
+        />
         <Article
           img="https://www.hsd.co.kr/images/68d1da4105ba4e1db179205143874a4a20240730025857.jpg"
           url="https://www.hsd.co.kr/event/event_view/1056?pageSize=12&pageNo=1&cate=&_csrf=55d0603b-7738-4fca-8955-2fb6124486e1"
