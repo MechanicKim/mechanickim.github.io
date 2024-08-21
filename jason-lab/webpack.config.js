@@ -3,9 +3,10 @@ const path = require('path');
 
 module.exports = {
   entry: {
-    ['bundle/dailyLog']: path.resolve(__dirname, 'src', 'dailyLog', 'index.tsx'),
-    ['bundle/dailyLimit']: path.resolve(__dirname, 'src', 'dailyLimit', 'index.tsx'),
-    ['bundle/shop_masmarulez']: path.resolve(__dirname, 'src', 'shop', 'masmarulez', 'index.tsx'),
+    ['bundle/home']: path.resolve(__dirname, 'src', 'home', 'index.tsx'),
+    // ['bundle/dailyLog']: path.resolve(__dirname, 'src', 'dailyLog', 'index.tsx'),
+    // ['bundle/dailyLimit']: path.resolve(__dirname, 'src', 'dailyLimit', 'index.tsx'),
+    // ['bundle/shop_masmarulez']: path.resolve(__dirname, 'src', 'shop', 'masmarulez', 'index.tsx'),
   },
   output: {
     path: path.resolve(__dirname, '../'),
@@ -40,20 +41,25 @@ module.exports = {
     ],
   },
   plugins: [
-		new HtmlWebpackPlugin({
-      filename: 'dailyLog/index.html',
-      chunks: ['bundle/dailyLog'],
-			template: path.resolve(__dirname, 'src', 'dailyLog', 'index.html'),
-		}),
     new HtmlWebpackPlugin({
-      filename: 'dailyLimit/index.html',
-      chunks: ['bundle/dailyLimit'],
-			template: path.resolve(__dirname, 'src', 'dailyLimit', 'index.html'),
+      filename: 'index.html',
+      chunks: ['bundle/home'],
+			template: path.resolve(__dirname, 'src', 'home', 'index.html'),
 		}),
-    new HtmlWebpackPlugin({
-      filename: 'shop/masmarulez.html',
-      chunks: ['bundle/shop_masmarulez'],
-			template: path.resolve(__dirname, 'src', 'shop', 'masmarulez', 'index.html'),
-		}),
+		// new HtmlWebpackPlugin({
+    //   filename: 'dailyLog/index.html',
+    //   chunks: ['bundle/dailyLog'],
+		// 	template: path.resolve(__dirname, 'src', 'dailyLog', 'index.html'),
+		// }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'dailyLimit/index.html',
+    //   chunks: ['bundle/dailyLimit'],
+		// 	template: path.resolve(__dirname, 'src', 'dailyLimit', 'index.html'),
+		// }),
+    // new HtmlWebpackPlugin({
+    //   filename: 'shop/masmarulez.html',
+    //   chunks: ['bundle/shop_masmarulez'],
+		// 	template: path.resolve(__dirname, 'src', 'shop', 'masmarulez', 'index.html'),
+		// }),
 	],
 };
