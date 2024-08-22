@@ -4,7 +4,7 @@ const path = require('path');
 module.exports = {
   entry: {
     ['bundle/home']: path.resolve(__dirname, 'src', 'home', 'index.tsx'),
-    // ['bundle/dailyLog']: path.resolve(__dirname, 'src', 'dailyLog', 'index.tsx'),
+    ['bundle/bookLog']: path.resolve(__dirname, 'src', 'bookLog', 'index.tsx'),
     // ['bundle/dailyLimit']: path.resolve(__dirname, 'src', 'dailyLimit', 'index.tsx'),
     // ['bundle/shop_masmarulez']: path.resolve(__dirname, 'src', 'shop', 'masmarulez', 'index.tsx'),
   },
@@ -46,11 +46,11 @@ module.exports = {
       chunks: ['bundle/home'],
 			template: path.resolve(__dirname, 'src', 'home', 'index.html'),
 		}),
-		// new HtmlWebpackPlugin({
-    //   filename: 'dailyLog/index.html',
-    //   chunks: ['bundle/dailyLog'],
-		// 	template: path.resolve(__dirname, 'src', 'dailyLog', 'index.html'),
-		// }),
+		new HtmlWebpackPlugin({
+      filename: 'bookLog/index.html',
+      chunks: ['bundle/bookLog'],
+			template: path.resolve(__dirname, 'src', 'bookLog', 'index.html'),
+		}),
     // new HtmlWebpackPlugin({
     //   filename: 'dailyLimit/index.html',
     //   chunks: ['bundle/dailyLimit'],

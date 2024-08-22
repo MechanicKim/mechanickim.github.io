@@ -7,7 +7,7 @@ type TProps = {
 function Header({ title }: TProps) {
   return (
     <header>
-      <h4 className="p-3 text-slate-950 font-semibold text-lg text-center">{title}</h4>
+      <h4 className="p-3 text-gray-900 font-semibold text-lg border-b">{title}</h4>
     </header>
   );
 }
