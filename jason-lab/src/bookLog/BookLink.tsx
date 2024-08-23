@@ -12,7 +12,7 @@ function BookLink({ book }: TProps) {
       href={book.url}
       target="_blank"
     >
-      <img className="w-32" src={book.imgSrc} />
+      <img className="w-28" src={book.imgSrc} />
     </a>
   );
 }

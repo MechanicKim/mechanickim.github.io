@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 
 import Article from './Article';
 import Paragraph from './Paragraph';
 
 function Articles1() {
+  useEffect(() => {
+    const hash = window.location.hash;
+    if (hash) {
+      const article = document.querySelector(hash);
+      if (article && article instanceof HTMLElement) {
+        const container = document.getElementById('article-contianer');
+        if (container && container instanceof HTMLElement) {
+          container.scrollTo({ top: article.offsetTop, behavior: 'smooth' });
+        }
+      }
+    }
+  }, []);
+
   return (
     <>
       <Article id="b1-01" title="성공으로 가는 위대한 비밀의 규칙">
@@ -31,13 +44,13 @@ function Articles1() {
           </Paragraph>
           <Paragraph>
             <>
-              품 안의 돈을 기품 있는 곳에 사용하며 사랑하는 사람과 보호해야 할 가치가 있는 곳에 사용하자.
+              품 안의 돈을 기품 있는 곳, 사랑하는 사람과 보호해야 할 가치가 있는 곳에 사용하자.
               이를 지켜보고 있는 돈도 더 많은 친구들을 옆에 불러들일 것이다.
             </>
           </Paragraph>
           <Paragraph>
             <>
-            불법을 통해 들어온 돈은 언제든 탈옥할 날만을 기다리거나 주인을 헤치고 빠져나오기 마련이니 위험한 돈과 친해질 생각을 지우자.
+              불법으로 들어온 돈은 언제든 탈옥할 날만을 기다리거나 주인을 헤치고 빠져나오기 마련이니 위험한 돈과 친해질 생각을 지우자.
             </>
           </Paragraph>
         </>
@@ -69,7 +82,7 @@ function Articles1() {
         <>
           <Paragraph>
             <>
-              수입이 일정하게 발생한다는 건 그 수입의 질이 비정규적인 수입보다 좋다는 뜻이다.
+              일정하게 발생하는 수입의 질은 비정규적인 수입보다 좋다.
             </>
           </Paragraph>
           <Paragraph>
@@ -91,20 +104,19 @@ function Articles1() {
         <>
           <Paragraph>
             <>
-              돈은 다른 돈에게 영향을 주며 그 돈의 액수가 크면 클수록 다른 돈에 영향을 준다.
               돈은 가까이에 있는 돈을 잡아당기는 능력이 있으며 주변 돈에 영향을 준다.
             </>
           </Paragraph>
           <Paragraph>
             <>
-              1년에 1,000만 원을 모았고 이 노력을 100이라고 가정하자.
+              1년에 1,000만 원을 모은 노력을 100이라고 가정하자.
               다음 1,000만 원을 모으기 위해 들이는 노력은 100보다 낮아진다.
               왜냐하면 이미 처음 만들어놓은 1,000만 원이 이자나 투자를 통해 자체 자본을 만들고 있기 때문이다.
             </>
           </Paragraph>
         </>
       </Article>
-      <Article id="b1-05" title="리스크가 클 때가 리스크가 가장 작을 때다">
+      <Article id="b1-06" title="리스크가 클 때가 리스크가 가장 작을 때다">
         <>
           <Paragraph>
             <>
@@ -121,6 +133,23 @@ function Articles1() {
           <Paragraph>
             <>
               모든 욕심의 끝은 몰락을 품고 있다. 그리고 모든 절망은 희망을 품고 있음을 기억해야 한다.
+            </>
+          </Paragraph>
+        </>
+      </Article>
+      <Article id="b1-07" title="남의 돈을 대하는 태도가 내 돈을 대하는 태도다">
+        <>
+          <Paragraph>
+            <>
+              세금이나 공금 같은 공공 자산을 함부로 하는 사람은 자신의 돈 역시 함부로 대하고 있음을 알아야 한다.
+              세금으로 만든 모든 것에는 내 돈도 일부 들어 있다.
+              친구와 번갈아가며 사는 밥값에는 내가 낼 때만이 아니라 상대가 낼 때도 내 돈이 포함되어 있다.
+            </>
+          </Paragraph>
+          <Paragraph>
+            <>
+              내가 존중받으려면 먼저 존중해야 하듯 내 돈이 존중받으려면 남의 돈도 존중해줘야 한다.
+              남의 돈을 함부로 하지 않을 때 내 돈도 함부로 취급받지 않는다.
             </>
           </Paragraph>
         </>
