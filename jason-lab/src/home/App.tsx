@@ -1,4 +1,5 @@
 import React from 'react';
+import UAParser from 'ua-parser-js';
 import '../index.css';
 
 import Header from './Header';
@@ -11,10 +12,14 @@ import img4 from './imgs/project3.png';
 import githubMark from './imgs/github-mark.png';
 
 function App() {
+  const ua = new UAParser();
+  const { type } = ua.getDevice();
+  const width = type === 'mobile' ? '100%' : '800px';
+
   return (
     <main className="w-screen h-screen">
-      <Header title="안녕하세요!" />
-      <section className="mx-auto" style={{ width: '800px' }}>
+      <Header title="안녕하세요!" width={width} />
+      <section className="mx-auto" style={{ width }}>
         <Item
           title="광고 없이 깔끔한 오늘의 뉴스"
           img={img1}
