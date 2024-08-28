@@ -1,7 +1,7 @@
 import React from 'react';
-import UAParser from 'ua-parser-js';
-
 import Spec from './Spec';
+
+import { isMobile } from '../util';
 
 type TProps = {
   title: string;
@@ -48,10 +48,7 @@ function ItemM({ title, img, desc, specs, LinkIcon }: TProps) {
 }
 
 function Item(props: TProps) {
-  const ua = new UAParser();
-  const { type } = ua.getDevice();
-
-  return type === 'mobile' ? <ItemM {...props} /> : <ItemP {...props} />;
+  return isMobile() ? <ItemM {...props} /> : <ItemP {...props} />;
 }
 
 export default Item;

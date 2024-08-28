@@ -1,9 +1,10 @@
 import React from 'react';
-import UAParser from 'ua-parser-js';
 import '../index.css';
 
 import Header from './Header';
 import Item from './items/Item';
+
+import { isMobile } from './util';
 
 import img1 from './imgs/project1.png';
 import img2 from './imgs/project2.png';
@@ -12,9 +13,7 @@ import img4 from './imgs/project3.png';
 import githubMark from './imgs/github-mark.png';
 
 function App() {
-  const ua = new UAParser();
-  const { type } = ua.getDevice();
-  const width = type === 'mobile' ? '100%' : '800px';
+  const width = isMobile() ? '100%' : '800px';
 
   return (
     <main className="w-screen h-screen">
