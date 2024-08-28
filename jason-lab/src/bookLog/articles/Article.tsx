@@ -10,8 +10,7 @@ function Article({ id, title, children }: TProps) {
   return (
     <article
       id={id}
-      className="px-5 py-6 ml-36 border-b text-gray-900"
-      style={{ width: '600px' }}
+      className="p-5 border-b"
     >
       <a href={`#${id}`}>
         <h4 className="text-2xl">{title}</h4>

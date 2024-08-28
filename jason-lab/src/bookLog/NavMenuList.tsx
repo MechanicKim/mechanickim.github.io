@@ -6,11 +6,12 @@ type TProps = {
   bookList: IBook[];
   selectBook: Dispatch<React.SetStateAction<IBook>>;
   selectedBookID: string;
+  isMobile: boolean;
 };
 
-function NavMenuList({ bookList, selectBook, selectedBookID }: TProps) {
+function NavMenuList({ bookList, selectBook, selectedBookID, isMobile }: TProps) {
   return (
-    <nav className="w-72 border-r">
+    <nav className={isMobile ? 'w-full' : 'w-72 border-r'}>
       <ul>
       {bookList.map((book) => {
         const { id, title } = book;
