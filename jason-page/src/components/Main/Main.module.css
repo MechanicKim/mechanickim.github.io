@@ -1,16 +1,48 @@
 .main {
+  flex: 1;
   max-width: 1024px;
   margin: 0 auto;
   padding: 24px 16px;
   line-height: 1.5;
   color: #212121;
   box-sizing: border-box;
+  overflow-y: auto;
+
+  > .intro {
+    padding-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+
+    > img {
+      width: 100%;
+      max-width: 375px;
+      border-radius: 8px;
+    }
+
+    > div {
+      > h1 {
+        font-size: 1.75rem;
+        font-weight: 500;
+      }
+    }
+  }
 
   > section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+
+  > section > article {
+    flex: 1;
+    min-width: 343px;
     padding: 16px;
     text-decoration: none;
     color: #212121;
     border-radius: 4px;
+    box-sizing: border-box;
+    background-color: #F5F5F5;
 
     > h1 {
       display: flex;
@@ -37,6 +69,7 @@
 
     .progress {
       display: flex;
+      flex-wrap: wrap;
       gap: 4px;
     }
 
@@ -60,7 +93,7 @@
     }
   }
 
-  > section:hover {
+  > section > article:hover {
     background-color: #EEEEEE;
   }
 }
