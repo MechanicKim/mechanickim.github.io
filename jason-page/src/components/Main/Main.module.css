@@ -1,0 +1,66 @@
+.main {
+  max-width: 1024px;
+  margin: 0 auto;
+  padding: 24px 16px;
+  line-height: 1.5;
+  color: #212121;
+  box-sizing: border-box;
+
+  > section {
+    padding: 16px;
+    text-decoration: none;
+    color: #212121;
+    border-radius: 4px;
+
+    > h1 {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 1.75rem;
+      font-weight: 500;
+    }
+
+    > h3 {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-weight: 500;
+
+      > a {
+        display: flex;
+      }
+    }
+
+    > div {
+      margin-top: 8px;
+    }
+
+    .progress {
+      display: flex;
+      gap: 4px;
+    }
+
+    .label {
+      padding: 4px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      border-radius: 4px;
+
+      &.common {
+        background-color: #FFF59D;
+      }
+
+      &.done {
+        background-color: #C8E6C9;
+      }
+
+      &.todo {
+        background-color: rgba(255, 255, 255, 0);
+      }
+    }
+  }
+
+  > section:hover {
+    background-color: #EEEEEE;
+  }
+}
