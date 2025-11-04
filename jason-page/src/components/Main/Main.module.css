@@ -1,12 +1,11 @@
 .main {
-  flex: 1;
   max-width: 1024px;
   margin: 0 auto;
   padding: 24px 16px;
   line-height: 1.5;
   color: #212121;
-  box-sizing: border-box;
   overflow-y: auto;
+  box-sizing: border-box;
 
   > .intro {
     padding-bottom: 16px;
@@ -37,18 +36,19 @@
   > section > article {
     flex: 1;
     min-width: 343px;
+    max-width: 488px;
     padding: 16px;
     text-decoration: none;
     color: #212121;
     border-radius: 4px;
-    box-sizing: border-box;
     background-color: #F5F5F5;
+    box-sizing: border-box;
 
     > h1 {
       display: flex;
       align-items: center;
       gap: 8px;
-      font-size: 1.75rem;
+      font-size: 1.5rem;
       font-weight: 500;
     }
 

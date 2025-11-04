@@ -54,7 +54,7 @@ export default function Main() {
             <CodeIcon /> FE 챌린지
           </h1>
           <h3>
-            프론트엔드 실무 역량을 키우기 위한 과제 풀이{" "}
+            프론트엔드 실무 역량을 키우기 위한 도전{" "}
             <a
               href="https://github.com/MechanicKim/fe-challenge/blob/main/README.md"
               target="_blank"
@@ -77,7 +77,7 @@ export default function Main() {
           <h1>
             <ExerciseIcon /> 풀업 챌린지
           </h1>
-          <h3>내 몸의 한계를 띄어넘는 가장 정직한 도전!</h3>
+          <h3>내 몸의 한계를 띄어넘는 가장 정직한 도전</h3>
           <div>
             <Label color={styles.common}>10개까지 달성! 💪🏻</Label>
           </div>
