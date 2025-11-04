@@ -4,12 +4,12 @@
 
 <img src="../assets/week1.png" alt="week1" width="360" />
 
-## 사용한 라이브러리, 데이터
+## 사용한 라이브러리, 주요 기술, 데이터
 
-- React, Chart.js 사용
-- 스타일링은 CSS Module 사용
-- Gemini를 사용하여 10월 22일 기준 최근 3개월 분 데이터 생성
-  - 데이터는 express API 서버를 만들어 제공
+- 라이브러리: React, Chart.js
+- 기술: CSS Module(스타일링)
+- 데이터: Gemini를 사용하여 만든 10월 22일 기준 최근 3개월 분 데이터
+  - 데이터는 Express API 서버를 만들어 제공
 
 ## 기술적 고민
 
