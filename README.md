@@ -5,6 +5,9 @@
 
 <img src="./assets/main.jpg" alt="메인 이미지" width="320" />
 
+- [LinkedIn](https://www.linkedin.com/in/%EB%AF%BC%EA%B7%9C-%EA%B9%80-aba962126/)
+- mechanic0406@gmail.com
+
 ## 프론트엔드 챌린지
 실무 감각을 유지하면서 역량을 키우기 위해 스스로 만들어 실천하고 있습니다.  
 Gemini를 사용하여 챌린지 기획을 합니다. 과제는 직접 풀어나가면서 Gemini code assist의 도움을 받는 식으로 진행하고 있습니다.  
