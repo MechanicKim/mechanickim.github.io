@@ -1,10 +1,10 @@
-# 3주차 챌린지 가이드: 다국어 지원 시스템 구축 (i18n)
+# 3주차 프론트엔드 챌린지: 다국어 지원 시스템 구축 (i18n)
 
 챌린지에 대한 자세한 내용은 [가이드](https://github.com/MechanicKim/fe-challenge/blob/main/apps/week3/README.md)를 참고하세요.
 
 <img src="../assets/week3.png" alt="week3" width="360" />
 
-## 라이브러리
+## 사용한 라이브러리
 
 - 라이브러리: React, react-intl
 

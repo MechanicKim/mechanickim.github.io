@@ -4,7 +4,7 @@
 
 <img src="../assets/week2.png" alt="week2" width="300" />
 
-## 라이브러리, 주요 기술
+## 사용한 라이브러리, 주요 기술
 
 - 라이브러리: 없음(Vanilla)
 - 기술: Drag and Drop API, FileReader API
