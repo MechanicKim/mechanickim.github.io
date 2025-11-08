@@ -17,3 +17,5 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [1주차: 인터랙티브 데이터 대시보드 위젯](./fe-challenge/WEEK1.md)
 - [2주차: 드래그 앤 드롭 파일 업로더](./fe-challenge/WEEK2.md)
 - [3주차: 다국어 지원 시스템 구축 (i18n)](./fe-challenge/WEEK3.md)
+- [4주차: 실시간 검색/정렬을 갖춘 반응형 테이블](./fe-challenge/WEEK4.md)
+- [5주차: 커스텀 폼 유효성 검사 라이브러리](./fe-challenge/WEEK5.md)

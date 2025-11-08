@@ -1,6 +1,6 @@
 # 5주차 프론트엔드 챌린지: 커스텀 폼 유효성 검사 라이브러리
 
-챌린지에 대한 자세한 내용은 [가이드](https://github.com/MechanicKim/fe-challenge/blob/main/apps/week4/README.md)를 참고하세요.
+챌린지에 대한 자세한 내용은 [가이드](https://github.com/MechanicKim/fe-challenge/blob/main/apps/week5/README.md)를 참고하세요.
 
 <img src="../assets/week5.png" alt="week5" width="200" />
 
