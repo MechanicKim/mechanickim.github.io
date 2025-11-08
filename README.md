@@ -19,3 +19,4 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [3주차: 다국어 지원 시스템 구축 (i18n)](./fe-challenge/WEEK3.md)
 - [4주차: 실시간 검색/정렬을 갖춘 반응형 테이블](./fe-challenge/WEEK4.md)
 - [5주차: 커스텀 폼 유효성 검사 라이브러리](./fe-challenge/WEEK5.md)
+- [6주차: WYSIWYG 마크다운 에디터 개발](./fe-challenge/WEEK6.md)
