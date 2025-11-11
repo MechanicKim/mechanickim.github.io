@@ -9,6 +9,7 @@
 - mechanic0406@gmail.com
 
 ## 프론트엔드 챌린지
+
 실무 감각을 유지하면서 역량을 키우기 위해 스스로 만들어 실천하고 있습니다.  
 Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assist와 함께 진행합니다.
 
@@ -21,3 +22,13 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [5주차: 커스텀 폼 유효성 검사 라이브러리](./fe-challenge/WEEK5.md)
 - [6주차: WYSIWYG 마크다운 에디터 개발](./fe-challenge/WEEK6.md)
 - [7주차: 실시간 협업 화이트보드 (드로잉) 개발](./fe-challenge/WEEK7.md)
+
+## 교세라 필로소피
+
+이나모리 가즈오의 책 `왜 일하는가`를 읽고 깊은 감명을 받아 이 분의 다른 책도 찾아 읽다가 [교세라 필로소피](https://korea.kyocera.com/inamori/philosophy/index.html)를 알게됐습니다.
+
+'인간으로서 올바르게 살아가는 것'을 배우고 그렇게 살아가기 위해 원문을 이곳에 정리하고 반복해서 읽기로 했습니다.
+
+- [교세라 필로소피란?](./kyocera-philosophy/ABOUT.md)
+- [마음을 닦는다](./kyocera-philosophy/part1/CHAPTER1.md)
+- [보다 좋은 일을 한다](./kyocera-philosophy/part1/CHAPTER2.md)
