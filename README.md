@@ -20,3 +20,4 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [4주차: 실시간 검색/정렬을 갖춘 반응형 테이블](./fe-challenge/WEEK4.md)
 - [5주차: 커스텀 폼 유효성 검사 라이브러리](./fe-challenge/WEEK5.md)
 - [6주차: WYSIWYG 마크다운 에디터 개발](./fe-challenge/WEEK6.md)
+- [7주차: 실시간 협업 화이트보드 (드로잉) 개발](./fe-challenge/WEEK7.md)
