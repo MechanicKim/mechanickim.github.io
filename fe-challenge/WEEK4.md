@@ -7,7 +7,7 @@
 
 ## 사용한 라이브러리, 주요 기술, 데이터
 
-- 라이브러리: React
+- 라이브러리: React, TypeScript
 - 기술: CSS Module(스타일링), [Intersection Observer](https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API), [matchMedia](https://developer.mozilla.org/ko/docs/Web/API/Window/matchMedia)
 - 데이터: Gemini를 사용하여 만든 가상의 회원 데이터
   - 데이터는 Express API 서버를 만들어 제공

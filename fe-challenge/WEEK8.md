@@ -7,7 +7,7 @@
 ## 사용한 프레임워크, 라이브러리
 
 - 프레임워크: Next.js
-- 라이브러리: React
+- 라이브러리: React, TypeScript
 
 ## 기록
 

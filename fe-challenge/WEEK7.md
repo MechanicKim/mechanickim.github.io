@@ -6,7 +6,7 @@
 
 ## 사용한 라이브러리, 주요 기술
 
-- 라이브러리: React, [Socket.io](https://socket.io/)
+- 라이브러리: React, TypeScript, [Socket.io](https://socket.io/)
 - 기술: [HTML Canvas API](https://developer.mozilla.org/ko/docs/Web/API/Canvas_API), WebSocket(Socket.io)
   - Express 서버에 웹 소켓 서버 구축
 

@@ -22,3 +22,4 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [6주차: WYSIWYG 마크다운 에디터 개발](./fe-challenge/WEEK6.md)
 - [7주차: 실시간 협업 화이트보드 (드로잉) 개발](./fe-challenge/WEEK7.md)
 - [8주차: Next/Nuxt 기반의 고성능 랜딩 페이지 목업 구현](./fe-challenge/WEEK8.md)
+- [9주차: 다기능 모달 컴포넌트 (접근성 및 UX)](./fe-challenge/WEEK9.md)

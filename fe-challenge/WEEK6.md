@@ -6,7 +6,7 @@
 
 ## 사용한 라이브러리, 주요 기술
 
-- 라이브러리: React, markedjs
+- 라이브러리: React, TypeScript, Marked
 - 기술: [execCommand](https://developer.mozilla.org/ko/docs/Web/API/Document/execCommand)
 
 ## 기록

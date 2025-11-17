@@ -6,7 +6,7 @@
 
 ## 사용한 라이브러리, 주요 기술, 데이터
 
-- 라이브러리: React, Chart.js
+- 라이브러리: React, TypeScript, Chart.js
 - 기술: CSS Module(스타일링)
 - 데이터: Gemini를 사용하여 만든 10월 22일 기준 최근 3개월 분 데이터
   - 데이터는 Express API 서버를 만들어 제공
