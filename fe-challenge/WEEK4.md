@@ -5,15 +5,6 @@
 <img src="../assets/week4_m.png" alt="week4" width="200" />
 <img src="../assets/week4_pc.png" alt="week4" width="360" />
 
-## 사용한 라이브러리, 주요 기술, 데이터
-
-- 라이브러리: React, TypeScript
-- 기술: CSS Module(스타일링), [Intersection Observer](https://developer.mozilla.org/ko/docs/Web/API/Intersection_Observer_API), [matchMedia](https://developer.mozilla.org/ko/docs/Web/API/Window/matchMedia)
-- 데이터: Gemini를 사용하여 만든 가상의 회원 데이터
-  - 데이터는 Express API 서버를 만들어 제공
-
-## 기록
-
 ### 25.11.06 - 반응형
 
 데스크톱과 모바일 환경에 따라 컴포넌트의 스타일이 아닌 컴포넌트를 다르게 사용해야겠다고 생각했다. 그래서 CSS 미디어쿼리가 아닌 자바스크립트의 matchMedia 메서드를 사용했다.(사실 CSS 미디어쿼리를 써도 된다. 컴포넌트에 클래스를 심어놓고 환경에 맞는 것만 보여주도록 하면 되기 때문이다.)

@@ -4,15 +4,6 @@
 
 <img src="../assets/week1.png" alt="week1" width="360" />
 
-## 사용한 라이브러리, 주요 기술, 데이터
-
-- 라이브러리: React, TypeScript, Chart.js
-- 기술: CSS Module(스타일링)
-- 데이터: Gemini를 사용하여 만든 10월 22일 기준 최근 3개월 분 데이터
-  - 데이터는 Express API 서버를 만들어 제공
-
-## 기록
-
 ### 25.11.03 - 매번 CSS Module을 사용하면서 느끼는 점
 
 CSS Module은 css 파일을 작성하는 방식이라 CSS in JS 방식 보다 유연하지 못한 점이 있다. 예를 들면 본 과제에서 기간 필터 중 선택한 것을 표시하려면 선택 여부에 따른 스타일 클래스를 넣어줘야 한다는 것이다.

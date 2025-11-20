@@ -4,13 +4,6 @@
 
 <img src="../assets/week8.png" alt="week8" width="360" />
 
-## 사용한 프레임워크, 라이브러리
-
-- 프레임워크: Next.js
-- 라이브러리: React, TypeScript
-
-## 기록
-
 ### 25.11.14 - 이미지 렌더링 방식 개선
 
 기본 img 태그 대신 Next.js에서 제공하는 [Image 컴포넌트](https://nextjs.org/docs/15/app/api-reference/components/image)를 사용하면 로딩을 최적화하여 LCP(Largest Contentful Paint)를 줄일 수 있다.

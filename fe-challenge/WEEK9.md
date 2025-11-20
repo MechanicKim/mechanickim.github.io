@@ -5,12 +5,6 @@
 <img src="../assets/week9_1.png" alt="week9" width="360" />
 <img src="../assets/week9_2.png" alt="week9" width="360" />
 
-## 사용한 라이브러리
-
-- 라이브러리: React, TypeScript
-
-## 기록
-
 ### 25.11.17 - 웹 접근성을 위한 포커스 트랩(Focus Trap)
 
 이번 챌린지를 통해 배운 포커스 트랩을(이제야...) 정리해본다.

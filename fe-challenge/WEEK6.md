@@ -4,13 +4,6 @@
 
 <img src="../assets/week6.png" alt="week6" width="360" />
 
-## 사용한 라이브러리, 주요 기술
-
-- 라이브러리: React, TypeScript, Marked
-- 기술: [execCommand](https://developer.mozilla.org/ko/docs/Web/API/Document/execCommand)
-
-## 기록
-
 ### 25.11.08 - execCommand 지원 중단
 
 MDN 페이지에 들어가자마자 보이는 것이 지원 중단 내용이다. 그래서 대안을 찾아보니, Selection/Range API를 사용해서 execCommand가 해주는 것을 직접 구현해야하는 것 같다. 대안으로 나온 API가 없다는 것이다. 몇몇 오픈소스를 보니 execCommand를 여전히 쓰는 것 같아 일단 쓰기로 했다.

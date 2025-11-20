@@ -4,13 +4,6 @@
 
 <img src="../assets/week5.png" alt="week5" width="200" />
 
-## 사용한 라이브러리, 주요 기술
-
-- 라이브러리: 없음(Vanilla)
-- 기술: [JS Modules](https://developer.mozilla.org/ko/docs/Web/JavaScript/Guide/Modules), [FormData](https://developer.mozilla.org/ko/docs/Web/API/FormData)
-
-## 기록
-
 ### 25.11.07 - 데이터 속성에 유효성 검사 규칙을 정의
 
 가이드에 따르긴 했지만 불편하다. 규칙이 복잡하거나 정규식이 길어지면 HTML 자체가 지저분해질수 있으니 말이다. 그래서 제미나이에 이야기를 해보니, 공감하면서 두 가지 대안을 제시해준다.

@@ -4,14 +4,6 @@
 
 <img src="../assets/week7.png" alt="week7" width="360" />
 
-## 사용한 라이브러리, 주요 기술
-
-- 라이브러리: React, TypeScript, [Socket.io](https://socket.io/)
-- 기술: [HTML Canvas API](https://developer.mozilla.org/ko/docs/Web/API/Canvas_API), WebSocket(Socket.io)
-  - Express 서버에 웹 소켓 서버 구축
-
-## 기록
-
 ### 25.11.11 - 실시간 동기화를 위한 데이터 구조
 
 캔버스에 선을 그리면 서버에 전달하는 드로잉 데이터의 구조는 타입스크립트 타입 정의로 다음과 같다.

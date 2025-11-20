@@ -4,12 +4,6 @@
 
 <img src="../assets/week3.png" alt="week3" width="360" />
 
-## 사용한 라이브러리
-
-- 라이브러리: React, TypeScript, react-intl
-
-## 기록
-
 ### 25.11.06 - 기술 보다는 표현
 
 `react-intl`을 사용하지 않고 `Intl API`를 사용해도 기술적 난이도가 크지는 않을 것 같다. 무엇보다 locale에 따라 같은 내용이라도 표현을 어떻게 해야하느냐가 중요하지 않을까?
