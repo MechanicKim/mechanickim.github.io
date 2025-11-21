@@ -24,3 +24,12 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [8주차: Next/Nuxt 기반의 고성능 랜딩 페이지 목업 구현](./fe-challenge/WEEK8.md)
 - [9주차: 다기능 모달 컴포넌트 (접근성 및 UX)](./fe-challenge/WEEK9.md)
 - [10주차: 토스트(Toast) 알림 시스템](./fe-challenge/WEEK10.md)
+
+## 자바스크립트 챌린지
+핵심 개념을 매일 정리합니다.
+
+- 1일차
+  - [var, let, const](./javascript/DAY1_1.md)
+  - [Scope](./javascript/DAY1_2.md)
+- 2일차
+  - [Hoisting](./javascript/DAY2_1.md)
