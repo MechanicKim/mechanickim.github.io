@@ -28,7 +28,8 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 ## 자바스크립트 챌린지
 핵심 개념을 매일 정리합니다.
 
-- [var, let, const](./javascript/1_KEYWORDS.md)
-- [Scope](./javascript/2_SCOPE.md)
-- [Hoisting](./javascript/3_HOISTING.md)
-- [Data Types](./javascript/4_DATA_TYPES.md)
+- [1. Keywords](./javascript/1_KEYWORDS.md)
+- [2. Scope](./javascript/2_SCOPE.md)
+- [3. Hoisting](./javascript/3_HOISTING.md)
+- [4. Data Types](./javascript/4_DATA_TYPES.md)
+- [5. Data Types](./javascript/5_PROTOTYPES.md)
