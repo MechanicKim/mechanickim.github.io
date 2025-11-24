@@ -32,4 +32,4 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [2. Scope](./javascript/2_SCOPE.md)
 - [3. Hoisting](./javascript/3_HOISTING.md)
 - [4. Data Types](./javascript/4_DATA_TYPES.md)
-- [5. Data Types](./javascript/5_PROTOTYPES.md)
+- [5. Prototypes](./javascript/5_PROTOTYPES.md)
