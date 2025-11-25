@@ -39,7 +39,7 @@ JavaScript의 모든 객체는 생성될 때 자신과 연결된 다른 객체(�
 
 다음은 객체를 생성하고 속성을 찾는 과정이다.
 
-```
+```javascript
 // 1. 생성자 함수 (미래 객체의 설계도)
 function Person(name) {
   this.name = name;
@@ -81,7 +81,7 @@ person1.sayHello(); // 출력: 안녕하세요, 저는 철수입니다.
 
 ES6에서 도입된 `class` 문법은 **프로토타입 기반 상속을 더욱 쉽게 사용하기 위한 문법적 설탕(Syntactic Sugar)**일 뿐이다. `class`를 사용해도 내부적으로는 여전히 프로토타입 체인을 통해 상속이 이루어진다.
 
-```
+```javascript
 // ES6 class 문법
 class Animal {
   constructor(name) {

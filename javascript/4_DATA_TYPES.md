@@ -13,7 +13,7 @@ JavaScript의 데이터 타입은 크게 두 가지 범주로 나뉜다.
 - 작은따옴표 (`'`) 또는 큰따옴표 (`"`)로 감싸서 표현
 - ES6 이후에는 백틱 (```)을 사용한 템플릿 리터럴도 사용
 
-```
+```javascript
 let name = '홍길동';
 let greeting = `안녕하세요, ${name}님.`; // 템플릿 리터럴
 
@@ -24,7 +24,7 @@ let greeting = `안녕하세요, ${name}님.`; // 템플릿 리터럴
 - 정수, 소수(실수) 등 모든 숫자
 - 특수한 숫자 값인 `Infinity` (무한대), `Infinity` (음의 무한대), `NaN` (Not a Number, 숫자 아님)도 포함
 
-```
+```javascript
 let integer = 123;
 let float = 3.14;
 let result = 10 / 'A'; // NaN (유효하지 않은 연산 결과)
@@ -36,7 +36,7 @@ let result = 10 / 'A'; // NaN (유효하지 않은 연산 결과)
 - `Number` 타입이 표현할 수 있는 안전한 최대 정수(약 2의 53승) 이상의 매우 큰 정수를 나타낼 때 사용
 - 숫자 뒤에 `n`을 붙여서 선언
 
-```
+```javascript
 let bigNumber = 9007199254740991n + 1n;
 
 ```
@@ -47,7 +47,7 @@ let bigNumber = 9007199254740991n + 1n;
 - 오직 `true` 또는 `false` 두 가지 값만 가짐
 - 주로 조건문(`if`), 반복문(`for`) 등 흐름 제어에 사용
 
-```
+```javascript
 let isStudent = true;
 let isPassed = false;
 
@@ -58,7 +58,7 @@ let isPassed = false;
 - 변수가 선언되었지만, **아직 값이 할당되지 않은 상태**
 - JavaScript 엔진이 자동으로 값을 할당하는 경우
 
-```
+```javascript
 let data; // 변수 선언 후 값을 할당하지 않음
 console.log(data); // 출력: undefined
 
@@ -69,7 +69,7 @@ console.log(data); // 출력: undefined
 - 변수에 **"값이 없다"는 것을 의도적으로 명시**할 때 사용
 - `Undefined`와 달리 개발자가 명시적으로 할당해야 하는 값
 
-```
+```javascript
 let car = null; // car 변수에는 현재 의도적으로 값이 없음을 명시
 
 ```
@@ -81,7 +81,7 @@ let car = null; // car 변수에는 현재 의도적으로 값이 없음을 명�
 - ES6에서 추가되었으며, **고유하고 변경 불가능한 값**을 생성하는 데 사용
 - 주로 객체의 속성(property) 키로 사용하여, 다른 키와의 충돌을 방지하는 목적으로 사용
 
-```
+```javascript
 const id = Symbol('id');
 const id2 = Symbol('id');
 
@@ -98,7 +98,7 @@ console.log(id === id2); // 출력: false (설명이 같더라도 값은 항상 
 - 키(key)와 값(value)으로 구성된 속성들의 집합
 - 일반적인 객체 외에 `Array` (배열), `Function` (함수), `Date`, `RegExp` 등도 포함
 
-```
+```javascript
 // 일반적인 객체
 let person = {
   name: '김개발',
@@ -124,7 +124,7 @@ function add(a, b) {
 
 원시 값을 복사하면, **원본 값과 완전히 분리된 새로운 값**이 생성된다. 따라서 복사된 변수를 변경해도 원본 변수에는 영향을 주지 않는다.
 
-```
+```javascript
 let a = 10;
 let b = a; // a의 '값(10)'을 복사
 
@@ -137,7 +137,7 @@ console.log(a); // 출력: 10 (원본 a는 그대로 유지)
 
 객체를 복사하면 **값이 저장된 메모리 주소(참조)**만 복사된다. 두 변수는 **동일한 메모리 공간을 가리킵니다.** 따라서 복사된 변수를 통해 내부 값을 변경하면 원본 변수에도 영향을 미친다.
 
-```
+```javascript
 let obj1 = { score: 100 };
 let obj2 = obj1; // obj1의 '주소'를 복사 (같은 객체를 가리킴)
 

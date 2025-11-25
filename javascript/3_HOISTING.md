@@ -28,7 +28,7 @@ JavaScript 코드가 실행될 때, 엔진은 다음 두 단계를 거친다.
 
 `var`로 선언된 변수는 호이스팅 시 **선언과 동시에 `undefined`로 초기화**된다. 따라서 선언문 이전에 변수에 접근해도 에러가 나지 않고 `undefined`를 출력한다.
 
-```
+```javascript
 // 실제 코드:
 console.log(a); // (1) 출력: undefined
 var a = 10;
@@ -45,7 +45,7 @@ console.log(a); // (2) 출력: 10
 
 **함수 선언문** (`function myFunc() { ... }`)은 변수와 달리 함수 본체 전체가 호이스팅된다. 따라서 함수를 정의한 코드보다 먼저 호출해도 문제없이 작동한다.
 
-```
+```javascript
 // 실제 코드:
 sayHello(); // 출력: Hello! (정상 작동)
 
@@ -66,14 +66,14 @@ function sayHello() {
 
 **실제 코드**
 
-```
+```javascript
 console.log(b); // (1) 에러 발생: ReferenceError (TDZ 안에 있음)
 let b = 20; // 실제 선언문이 실행되는 순간 TDZ를 벗어남
 console.log(b); // (2) 출력: 20
 ```
 **JavaScript 엔진이 해석하는 방식**
 
-```
+```javascript
 // b가 선언되었지만 초기화되지 않은 상태 (TDZ 시작)
 // console.log(b); // ReferenceError 발생
 

@@ -10,7 +10,7 @@
 
 ## 프론트엔드 챌린지
 실무 감각을 유지하면서 역량을 키우기 위해 스스로 만들어 실천하고 있습니다.  
-Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assist와 함께 진행합니다.
+Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함께 진행합니다.
 
 챌린지에 대한 자세한 내용은 [로드맵](https://github.com/MechanicKim/fe-challenge/blob/main/README.md)을 통해 확인하세요.
 
@@ -33,3 +33,4 @@ Gemini를 사용하여 챌린지 기획을 합니다. 과제는 Gemini code assi
 - [3. Hoisting](./javascript/3_HOISTING.md)
 - [4. Data Types](./javascript/4_DATA_TYPES.md)
 - [5. Prototypes](./javascript/5_PROTOTYPES.md)
+- [6. typeof](./javascript/6_TYPEOF.md)

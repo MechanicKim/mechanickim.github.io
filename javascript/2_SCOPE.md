@@ -21,7 +21,7 @@
 - **정의:** 함수가 호출될 때 생성되는 스코프. 함수 내부 전체에서만 유효하며, 함수 바깥에서는 접근할 수 없음
 - **특징:** `var`는 `if`문이나 `for`문 같은 **블록(`{}`)을 무시**하고, 오직 함수 레벨에서만 스코프를 형성
 
-```
+```javascript
 function calculate() {
   var a = 10; // 함수 스코프
   if (true) {
@@ -40,7 +40,7 @@ function calculate() {
 - **정의:** 중괄호(`{}`)로 묶인 코드 블록 내에서만 유효한 스코프. 함수, `if`문, `for`문, `while`문 등의 중괄호가 모두 블록 스코프를 만듦
 - **특징:** 블록을 벗어나면 변수에 접근할 수 없음. 이는 코드의 예측 가능성을 높이고, 변수 이름 충돌을 줄여줌
 
-```
+```javascript
 function checkScope() {
   let c = 30; // 함수 스코프 겸 외부 블록 스코프
   if (true) {
@@ -66,7 +66,7 @@ JavaScript는 렉시컬 스코프(Lexical Scope) 규칙을 따른다. 이는 **�
 - 변수를 찾으면 검색을 중단하고, 최상위(전역) 스코프까지 갔는데도 변수를 찾지 못하면 ReferenceError를 발생
 
 
-```
+```javascript
 const globalVar = "전역 변수"; // 1. 전역 스코프
 
 function outerFunction() {
