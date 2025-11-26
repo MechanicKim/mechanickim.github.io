@@ -36,3 +36,4 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [6. typeof](./javascript/6_TYPEOF.md)
 - [7. Type Casting](./javascript/7_TYPE_CASTING.md)
 - [8. Equality Comparisons](./javascript/8_EQUALITY_COMPARISONS.md)
+- [9. Event Loop](./javascript/9_EVENT_LOOP.md)
