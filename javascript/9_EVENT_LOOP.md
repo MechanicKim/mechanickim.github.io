@@ -1,4 +1,4 @@
-Event Loop
+# Event Loop
 
 자바스크립트는 기본적으로 **싱글 스레드(Single-threaded)** 언어이지만, **이벤트 루프(Event Loop)**라는 메커니즘을 통해 비동기 작업을 처리하고 논블로킹(Non-blocking) 방식으로 동작할 수 있다.
 
