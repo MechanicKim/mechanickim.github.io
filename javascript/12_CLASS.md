@@ -41,7 +41,7 @@ class Person {
 `new` 연산자를 사용하여 클래스를 호출하면 해당 클래스의 인스턴스 객체가 생성된다.
 
 ```javascript
-const person1 = new Person('홍길동', 30);
+const person1 = new Person("홍길동", 30);
 console.log(person1.name); // 출력: 홍길동
 ```
 
@@ -65,7 +65,7 @@ class Person {
   }
 }
 
-const p = new Person('김철수');
+const p = new Person("김철수");
 console.log(p.sayHello()); // 출력: 안녕하세요, 저는 김철수입니다.
 ```
 
@@ -110,11 +110,11 @@ class Animal {
 // 자식 클래스 (Subclass)
 class Dog extends Animal {
   bark() {
-    return '멍멍!';
+    return "멍멍!";
   }
 }
 
-const myDog = new Dog('바둑이');
+const myDog = new Dog("바둑이");
 console.log(myDog.move()); // 출력: 바둑이가 움직입니다. (상속받은 메서드)
 console.log(myDog.bark()); // 출력: 멍멍! (자신만의 메서드)
 ```
@@ -133,7 +133,7 @@ class Mammal extends Animal {
 
   move() {
     // 부모 클래스의 메서드를 호출
-    return super.move() + ' (포유류 방식)';
+    return super.move() + " (포유류 방식)";
   }
 }
 ```

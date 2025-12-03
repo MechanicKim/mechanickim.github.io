@@ -9,6 +9,7 @@
 - mechanic0406@gmail.com
 
 ## 프론트엔드 챌린지
+
 실무 감각을 유지하면서 역량을 키우기 위해 스스로 만들어 실천하고 있습니다.  
 Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함께 진행합니다.
 
@@ -27,6 +28,7 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [11주차: 아코디언 (Accordion) 컴포넌트](./fe-challenge/WEEK11.md)
 
 ## 자바스크립트 챌린지
+
 핵심 개념을 매일 정리합니다.
 
 - [1. Keywords](./javascript/1_KEYWORDS.md)
@@ -41,3 +43,4 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [10. Promise](./javascript/10_PROMISE.md)
 - [11. Promise](./javascript/11_ASYNC_AWAIT.md)
 - [12. Class](./javascript/12_CLASS.md)
+- [13. ITERATOR](./javascript/13_ITERATOR.md)
