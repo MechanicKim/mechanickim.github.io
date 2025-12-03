@@ -40,3 +40,4 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [9. Event Loop](./javascript/9_EVENT_LOOP.md)
 - [10. Promise](./javascript/10_PROMISE.md)
 - [11. Promise](./javascript/11_ASYNC_AWAIT.md)
+- [12. Class](./javascript/12_CLASS.md)
