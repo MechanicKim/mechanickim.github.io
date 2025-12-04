@@ -43,4 +43,5 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [10. Promise](./javascript/10_PROMISE.md)
 - [11. Promise](./javascript/11_ASYNC_AWAIT.md)
 - [12. Class](./javascript/12_CLASS.md)
-- [13. ITERATOR](./javascript/13_ITERATOR.md)
+- [13. Iterator](./javascript/13_ITERATOR.md)
+- [14. Generator](./javascript/14_GENERATOR.md)
