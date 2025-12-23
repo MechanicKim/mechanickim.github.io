@@ -45,3 +45,7 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [12. Class](./javascript/12_CLASS.md)
 - [13. Iterator](./javascript/13_ITERATOR.md)
 - [14. Generator](./javascript/14_GENERATOR.md)
+
+## Others
+
+- [pnpm strict-dep-builds 설정을 통한 보안 강화](./others/PNPM_STRICT_DEP_BUILDS.md)
