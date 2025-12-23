@@ -1,114 +1,55 @@
-# JSX + Vanilla JS
+# JSX 런타임(Classic vs Automatic)
 
-React 대신 `Vanilla JS(TypeScript)`로 커스텀 런타임을 만들어 사용해보자.([저장소](https://github.com/MechanicKim/jsx-runtime))
+## Classic Runtime (레거시 방식)
 
-## 예제 프로젝트
+과거 React가 오랫동안 사용해 온 방식. JSX를 만나면 단순히 React.createElement 호출로 변환한다.
 
-`pnpm`으로 vite 프로젝트를 만든다.
+- **동작 원리**: `<div>...</div>` → `React.createElement('div', ...)`
+- **특징**:
+    - JSX를 사용하는 모든 파일 상단에 `import React from 'react'`가 반드시 있어야 함.
+        - 참고로 vite의 경우 esbuild.jsxInject 설정을 통해 자동 주입 가능
+    - 사용하지 않는 React 변수를 임포트해야 하므로 번들 크기가 미세하게 증가할 수 있음
+    - 변환 결과가 특정 라이브러리(React)의 메서드에 강하게 결합
 
-```bash
-pnpm create vite
-```
+## Automatic Runtime (현대적 방식)
 
-프로젝트 이름을 입력하고 `Vanilla`, `TypeScript`를 선택하자.
+React 17부터 도입. 컴파일러가 런타임을 자동으로 감지하고 임포트한다.
 
-## [vite.config.ts](https://github.com/MechanicKim/jsx-runtime/blob/main/vite.config.ts)
+- **동작 원리**: `<div>...</div>` → `_jsx('div', ...)`
+- **특징**:
+    - **자동 임포트**: 개발자가 직접 런타임을 임포트할 필요가 없음. 컴파일러가 `jsx-runtime`에서 필요한 함수를 알아서 가져옴
+    - **성능 최적화**: 정적 요소와 동적 요소를 구분하여 `jsx`와 `jsxs`를 선택적으로 호출하는 등 최적화 가능
+    - **유연성**: jsxImportSource 설정만으로 다른 커스텀 런타임으로 쉽게 교체할 수 있음.
 
-파일이 없다면 새로 만들고 다음 내용을 추가한다.
+## 코드 변환 예시
 
-```typescript
-import { defineConfig } from "vite";
-import { resolve } from "path";
-
-export default defineConfig({
-  esbuild: {
-    jsxFactory: "toElement",
-    jsxFragment: "Fragment",
-    jsxInject: `import { toElement, Fragment } from '@jsx-runtime'`,
-  },
-  resolve: {
-    alias: {
-      "@jsx-runtime": resolve(__dirname, "src", "runtime", "jsx-runtime.ts"),
-    },
-  },
-});
-```
-
-path 모듈을 가져오지 못하는 경우 `@types/node`를 설치하자.
-
-```bash
-pnpm i @types/node
-```
-
-## [tsconfig.json](https://github.com/MechanicKim/jsx-runtime/blob/main/tsconfig.json)
-
-다음 속성을 추가한다.
-
-```json
-{
-  "compilerOptions": {
-    "jsx": "react",
-    "jsxFactory": "toElement",
-    "jsxFragmentFactory": "Fragment",
-    "paths": {
-      "@jsx-runtime": ["./src/runtime/jsx-runtime.ts"]
-    },
-  }
-}
-```
-
-- **jsx**: .tsx 파일의 JSX 구문 출력 방식을 제어
-- **jsxFactory**: JSX 요소를 컴파일 할 때 호출할 함수를 지정
-- **jsxFragmentFactory**: JSX Fragment 팩토리 함수를 지정
-- **paths**: alias 지정
-
-## [jsx-runtime.ts](https://github.com/MechanicKim/jsx-runtime/blob/main/src/runtime/jsx-runtime.ts)
-
-JSX 요소 컴파일을 위해 호출할 함수를 다음과 같이 정의했다.
+#### 원본 코드
 
 ```typescript
-import type { Child } from "./types";
-import { applyProps } from "./props";
-import { appendChildren } from "./children";
-
-export { Fragment } from "./Fragment";
-
-export function toElement(
-  tag: string | ((props: any) => JSX.Element),
-  props: Record<string, any> | null,
-  ...children: Child[]
-): JSX.Element {
-  const normalizedProps = props || {};
-
-  // 함수형 컴포넌트 처리
-  if (typeof tag === "function") {
-    return tag({ ...normalizedProps, children });
-  }
-
-  const element = document.createElement(tag); // 요소 생성
-  applyProps(element, normalizedProps); // 속성 적용
-  appendChildren(element, children); // 자식 요소 추가
-  return element;
-}
+const App = () => <div id="hi">Hello</div>;
 ```
 
-## [Fragment.ts](https://github.com/MechanicKim/jsx-runtime/blob/main/src/runtime/Fragment.ts)
+#### Classic
 
-JSX Fragment 팩토리 함수를 다음과 같이 정의했다.
-
-```typescript
-import type { Child } from "./types";
-import { appendChildren } from "./children";
-
-export function Fragment({
-  children,
-}: {
-  children: Child[];
-}): DocumentFragment {
-  const fragment = document.createDocumentFragment();
-  appendChildren(fragment, children);
-
-  return fragment;
-}
+```javascript
+import React from 'react';
+const App = () => React.createElement('div', { id: 'hi' }, 'Hello');
 ```
 
+#### Automatic
+
+```javascript
+import { jsx as _jsx } from '@jsx-runtime/runtime/jsx-runtime';
+const App = () => _jsx('div', { id: 'hi', children: 'Hello' });
+```
+
+## 커스텀 런타임
+
+JSX는 React에 속한 확장 문법이 아니다. 독립적인 인터페이스로 가상 또는 실제 DOM 객체를 만드는 함수를 직접 구현하여 붙여서 사용할 수 있다.
+
+문자열이나 DOM 객체보다 JSX로 컴포넌트를 만드는 방식의 생산성이 높기 때문에, 알아두면 분명 도움이 될 것이다.
+
+여기서 자세한 내용은 다루지 않고 링크로 대체한다.
+
+- [Classic](https://github.com/MechanicKim/jsx-runtime/blob/main/packages/classic-runtime/README.md)
+- [Automatic](https://github.com/MechanicKim/jsx-runtime/blob/main/packages/runtime/README.md)
