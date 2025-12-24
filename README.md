@@ -29,8 +29,6 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 
 ## 자바스크립트 챌린지
 
-핵심 개념을 매일 정리합니다.
-
 - [1. Keywords](./javascript/1_KEYWORDS.md)
 - [2. Scope](./javascript/2_SCOPE.md)
 - [3. Hoisting](./javascript/3_HOISTING.md)
@@ -48,5 +46,6 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 
 ## Others
 
+- [무겁고 유료화된 Docker Desktop의 대안 Colima](./others/COLIMA.md)
 - [pnpm strict-dep-builds 설정을 통한 보안 강화](./others/PNPM_STRICT_DEP_BUILDS.md)
 - [일본어 히라카나/가타카나 쓰기](https://mechanickim.github.io/page/jp-letters)
