@@ -48,4 +48,4 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 
 - [무겁고 유료화된 Docker Desktop의 대안 Colima](./others/COLIMA.md)
 - [pnpm strict-dep-builds 설정을 통한 보안 강화](./others/PNPM_STRICT_DEP_BUILDS.md)
-- [일본어 히라카나/가타카나 쓰기](https://mechanickim.github.io/page/jp-letters)
+- [일본어 히라카나/가타카나 쓰기](https://mechanickim.github.io/app/jp-letters)
