@@ -33,15 +33,8 @@ reverse_proxy :5173
 caddy run
 ```
 
-#### 백그라운드 실행
-```bash
-caddy start
-```
-
-#### 설정 변경 후 적용
-```bash
-caddy reload
-```
+- **백그라운드 실행**: `caddy start`
+- **설정 변경 후 적용**: `caddy reload`
 
 #### reverse_proxy 참고
 - [문서](https://caddyserver.com/docs/caddyfile/directives/reverse_proxy)
