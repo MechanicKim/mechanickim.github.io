@@ -44,8 +44,11 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [13. Iterator](./javascript/13_ITERATOR.md)
 - [14. Generator](./javascript/14_GENERATOR.md)
 
+## Apps
+- [일본어 히라카나/가타카나 쓰기](https://mechanickim.github.io/app/jp-letters)
+
 ## Others
 
 - [무겁고 유료화된 Docker Desktop의 대안 Colima](./others/COLIMA.md)
 - [pnpm strict-dep-builds 설정을 통한 보안 강화](./others/PNPM_STRICT_DEP_BUILDS.md)
-- [일본어 히라카나/가타카나 쓰기](https://mechanickim.github.io/app/jp-letters)
+- [Caddy로 쉽고 가벼운 로컬 리버스 프록시 서버 만들기](./others/CADDY_md)
