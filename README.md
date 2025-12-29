@@ -64,3 +64,8 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [6. 문자열 타입](./java/6_STRING_TYPE.md)
 - [7. 자동 타입 변환](./java/7_PROMOTION.md)
 - [8. 강제 타입 변환](./java/8_CASTING.md)
+- [9. 연산식에서 자동 타입 변환](./java/9_PROMOTION2.md)
+- [10. 문자열을 기본 타입으로 변환](./java/10_CASTING_STRING.md)
+- [11. 변수 사용 범위](./java/11_VAR_SCOPE.md)
+- [12. 콘솔로 변수값 출력](./java/12_PRINT.md)
+- [13. 키보드 입력 데이터를 변수에 저장](./java/13_INPUT.md)
