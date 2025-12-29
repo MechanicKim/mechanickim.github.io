@@ -8,6 +8,16 @@
 - [LinkedIn](https://www.linkedin.com/in/%EB%AF%BC%EA%B7%9C-%EA%B9%80-aba962126/)
 - mechanic0406@gmail.com
 
+## Apps
+
+- [일본어 히라카나/가타카나 쓰기](https://mechanickim.github.io/app/jp-letters)
+
+## Others
+
+- [무겁고 유료화된 Docker Desktop의 대안 Colima](./others/COLIMA.md)
+- [pnpm strict-dep-builds 설정을 통한 보안 강화](./others/PNPM_STRICT_DEP_BUILDS.md)
+- [Caddy로 쉽고 가벼운 로컬 리버스 프록시 서버 만들기](./others/CADDY_md)
+
 ## 프론트엔드 챌린지
 
 실무 감각을 유지하면서 역량을 키우기 위해 스스로 만들어 실천하고 있습니다.  
@@ -44,11 +54,13 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [13. Iterator](./javascript/13_ITERATOR.md)
 - [14. Generator](./javascript/14_GENERATOR.md)
 
-## Apps
-- [일본어 히라카나/가타카나 쓰기](https://mechanickim.github.io/app/jp-letters)
+## Java
 
-## Others
-
-- [무겁고 유료화된 Docker Desktop의 대안 Colima](./others/COLIMA.md)
-- [pnpm strict-dep-builds 설정을 통한 보안 강화](./others/PNPM_STRICT_DEP_BUILDS.md)
-- [Caddy로 쉽고 가벼운 로컬 리버스 프록시 서버 만들기](./others/CADDY_md)
+- [1. 변수 선언](./java/1_VAR_DECLARATION.md)
+- [2. 정수 타입](./java/2_INT_TYPES.md)
+- [3. 문자 타입](./java/3_CHAR_TYPE.md)
+- [4. 실수 타입](./java/4_FLOATING_TYPES.md)
+- [5. 논리 타입](./java/5_BOOLEAN_TYPE.md)
+- [6. 문자열 타입](./java/6_STRING_TYPE.md)
+- [7. 자동 타입 변환](./java/7_PROMOTION.md)
+- [8. 강제 타입 변환](./java/8_CASTING.md)
