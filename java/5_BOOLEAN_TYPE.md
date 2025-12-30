@@ -1,6 +1,6 @@
 # 논리 타입
 
-참(`true`)과 거짓(`false`) 중 하나의 값을 저장하는 타입으로 주로 조건문(if)이나 반복문(for, while)의 실행 흐름을 제어하는 데 사용한다.
+참(`true`)과 거짓(`false`) 중 하나의 값을 저장하는 타입. 주로 조건문(if)이나 반복문(for, while)의 실행 흐름을 제어하는 데 사용
 
 ### 1. boolean 타입의 특징
 
@@ -13,15 +13,15 @@ boolean stop = true;
 boolean state = false;
 
 if (stop) {
-    System.out.println("중지합니다.");
+	System.out.println("중지합니다.");
 } else {
-    System.out.println("시작합니다.");
+	System.out.println("시작합니다.");
 }
 ```
 
 ### 2. 관계 연산의 결과
 
-관계 연산자(>, <, ==, != 등)의 결과는 항상 boolean 타입으로 반환한다.
+관계 연산자(`>`, `<`, `==`, `!=` 등)의 결과는 항상 boolean 타입으로 반환한다.
 
 ```java
 int x = 10;

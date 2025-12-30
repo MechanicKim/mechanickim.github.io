@@ -1,6 +1,6 @@
 # 변수 선언
 
-변수 선언은 컴퓨터 메모리에 데이터를 저장할 공간을 확보하고, 그 공간에 이름을 붙이는 과정이다.
+컴퓨터 메모리에 데이터를 저장할 공간을 확보하고, 그 공간에 이름을 붙이는 과정
 
 ### 1. 기본 작성법
 
@@ -15,11 +15,13 @@ double price; // 실수를 저장할 price 변수 선언
 ### 2. 변수 명명 규칙
 
 #### 필수 규칙 (컴파일 에러 발생):
+
 - 첫 글자는 **문자**, `$`, `_`로 시작(숫자 불가)
 - 대소문자를 엄격히 구분 (`age`와 `Age`는 다른 변수)
 - **예약어**(`int`, `class`, `return`, `if` 등) 사용 불가
 
 #### 권장 관례 (가독성):
+
 - **카멜 케이스(Camel Case)**: 첫 글자는 소문자로, 여러 단어가 결합되면 뒤 단어의 첫 글자를 대문자로(예: `userPhoneNumber`)
 - 의미 있는 이름 사용(예: `a` 보다는 `score`)
 
@@ -41,13 +43,13 @@ int speed = 100;    // 선언과 동시에 초기화
 ```java
 // 예: 리스트의 요소는 관심 없고 반복 횟수만 중요할 때
 for (var _ : items) {
-    count++;
+	count++;
 }
 
 // 예: 예외 객체를 사용할 필요가 없을 때
 try {
-    int n = Integer.parseInt(s);
+	int n = Integer.parseInt(s);
 } catch (NumberFormatException _) {
-    System.out.println("숫자가 아닙니다.");
+	System.out.println("숫자가 아닙니다.");
 }
 ```

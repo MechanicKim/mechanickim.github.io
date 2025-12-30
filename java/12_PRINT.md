@@ -40,7 +40,7 @@ int price = 12300;
 double tax = 1.1;
 
 // "가격: 12,300원" 처럼 자릿수 맞추기
-System.out.printf("가격: %6d원%n", price); 
+System.out.printf("가격: %6d원%n", price);
 
 // 소수점 둘째 자리까지 출력하기
 System.out.printf("세율 적용: %.2f%n", price * tax);
