@@ -14,11 +14,16 @@
 
 ## Others
 
-- [무겁고 유료화된 Docker Desktop의 대안 Colima](./others/COLIMA.md)
 - [pnpm strict-dep-builds 설정을 통한 보안 강화](./others/PNPM_STRICT_DEP_BUILDS.md)
 - [Caddy로 쉽고 가벼운 로컬 리버스 프록시 서버 만들기](./others/CADDY_md)
 
-## 프론트엔드 챌린지
+## Docker
+
+- [Docker Desktop의 대안 Colima](./docker/COLIMA.md)
+- [Docker CLI 명령어](./docker/DOCKER_CLI.md)
+- [Docker 시나리오](./docker/DOCKER_USECASE.md)
+
+## FE Challenge
 
 실무 감각을 유지하면서 역량을 키우기 위해 스스로 만들어 실천하고 있습니다.  
 Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함께 진행합니다.
@@ -37,7 +42,7 @@ Gemini를 사용하여 챌린지 기획을, 과제는 Gemini code assist와 함�
 - [10주차: 토스트 (Toast) 알림 시스템](./fe-challenge/WEEK10.md)
 - [11주차: 아코디언 (Accordion) 컴포넌트](./fe-challenge/WEEK11.md)
 
-## 자바스크립트 챌린지
+## Javascript
 
 - [1. Keywords](./javascript/1_KEYWORDS.md)
 - [2. Scope](./javascript/2_SCOPE.md)

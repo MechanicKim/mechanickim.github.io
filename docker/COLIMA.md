@@ -41,6 +41,7 @@ colima status
 # Apple Silicon Mac에서 x86_64 기반 이미지를 실행해야 할 때
 colima start --arch x86_64 --memory 4
 ```
+- **애플 실리콘 권장 옵션**: `colima start --cpu 4 --memory 8 --arch aarch64`
 
 ## 주요 설정 및 최적화
 
