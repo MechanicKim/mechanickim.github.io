@@ -21,7 +21,8 @@
 
 - [Docker Desktop의 대안 Colima](./docker/COLIMA.md)
 - [Docker CLI 명령어](./docker/DOCKER_CLI.md)
-- [Docker 시나리오](./docker/DOCKER_USECASE.md)
+- [Docker 실습](./docker/DOCKER_PRACTICE.md)
+- [Kubernetes(with Colima)](./docker/KUBERNETES.md)
 
 ## FE Challenge
 

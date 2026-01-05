@@ -93,7 +93,7 @@ docker rmi httpd
 - **내용 편집**: 도커 컨테이너를 통해서
 - **백업**: 절차가 복잡함
 
-## 9. 볼륨 백업
+### 9. 볼륨 백업
 ```bash
 # /source에 마운트된 볼륨의 내용을 압축하여 /target에 저장
 docker run --rm -v apa000vol:/source -v ./backup:/target busybox tar czvf /target/backup_apa.tar.gz -C /source .
@@ -104,14 +104,14 @@ docker run --rm -v apa000vol:/source -v ./backup:/target busybox tar czvf /targe
 - `busybox`: 다양한 리눅스 명령어를 모아놓은 패키지
 - `tar czvf /target/backup_apa.tar.gz -C /source .`: /source 위치로 이동하여 현재 위치의 볼륨 내용을 압축, /target에 저장
 
-## 10. 백업 복원
+### 10. 백업 복원
 ```bash
 # /target에 저장된 압축 파일을 풀어 /source에 복원
 docker run --rm -v apa000vol:/source -v ./backup:/target busybox tar xzvf /target/backup_apa.tar.gz -C /source
 ```
 - `tar xzvf /target/backup_apa.tar.gz -C /source`: /target에 있는 압축 파일을 풀어 /source에 복원
 
-## 11. commit 커맨드로 컨테이너를 이미지로 변환
+### 11. commit 커맨드로 컨테이너를 이미지로 변환
 ```bash
 docker run --name apa000 -d -p 8090:80 httpd
 # apa000 컨테이너로 새로운 이미지 생성
@@ -119,7 +119,7 @@ docker commit apa000 apa000cp
 docker image ls
 ```
 
-## 12. Dockerfile 스크립트로 이미지 만들기
+### 12. Dockerfile 스크립트로 이미지 만들기
 index.html 파일을 미리 준비, 같은 위치에 Dockerfile을 만든다.
 ```Dockerfile
 FROM httpd
@@ -130,4 +130,56 @@ COPY index.html /usr/local/apache2/htdocs
 docker build -t apa000cp2 .
 docker image ls
 docker rmi apa000cp apa000cp2
+```
+
+### 13. 컨테이너 쉘 실행
+```bash
+docker run --name apa000 -it -p 8090:80 httpd
+docker exec -it apa000 /bin/bash
+# 쉘 실행, 작업 후 exit로 빠져나오기
+exit
+docker stop apa000
+docker rm apa000
+docker rmi httpd
+```
+
+### 14. 도커 컴포즈(워드프레스, MySQL)
+docker-compose.yml 파일 작성
+```yaml
+version: "3"
+services:
+  mysql000:
+    platform: linux/amd64
+    image: mysql:5.7
+    networks:
+      - wordpress000net
+    volumes:
+      - mysql000vol:/var/lib/mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: myrootpass
+      MYSQL_DATABASE: wordpress000db
+      MYSQL_USER: wordpress000kun
+      MYSQL_PASSWORD: kunpass
+  wordpress000:
+    depends_on:
+      - mysql000
+    image: wordpress
+    networks:
+      - wordpress000net
+    volumes:
+      - wordpress000vol:/var/www/html
+    ports:
+      - 8085:80
+    restart: always
+    environment:
+      WORDPRESS_DB_HOST: mysql000
+      WORDPRESS_DB_NAME: wordpress000db
+      WORDPRESS_DB_USER: wordpress000kun
+      WORDPRESS_DB_PASSWORD: kunpass
+networks:
+  wordpress000net:
+volumes:
+  mysql000vol:
+  wordpress000vol:
 ```
