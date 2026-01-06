@@ -1,0 +1,48 @@
+{
+  "title": "Look who's here!",
+  "koreanTitle": "아니, 이게 누구야!",
+  "mainEx": [
+    "A: Look who’s here! I can't believe it.",
+    "B: Oh my god! What a small world. Good to see you!",
+    "A: Long time no see. How have you been?",
+    "B: I’m doing great. You know what? You haven’t changed a bit!",
+    "A: Nice talking to you. I have to go now. Say hello to your father.",
+    "B: Sure! Take care and I’ll keep in touch."
+  ],
+  "mainExKo": [
+    "A: 아니, 이게 누구야! 진짜 믿기지 않네.",
+    "B: 세상에! 세상 참 좁다. 정말 반가워!",
+    "A: 오랜만이야. 그동안 어떻게 지냈어?",
+    "B: 나야 잘 지내지. 근데 너 말야, 하나도 안 변했다!",
+    "A: 즐거웠어. 이제 가봐야겠다. 아버님께 안부 전해드려.",
+    "B: 물론이지! 몸조심하고 내가 연락할게."
+  ],
+  "subEx": [
+    {
+      "title": "How have you been?",
+      "tips": [
+        "상대방의 근황이 궁금할 때 무난하게 쓰는 표현",
+        "별일 없이 잘 지냈다면 \"Can’t complain. Same as usual.\"라고 대답해 보세요."
+      ]
+    },
+    {
+      "title": "haven’t changed a bit",
+      "tips": [
+        "\"하나도 안 변했네!\"라는 칭찬",
+        "반대로 많이 변했다면 \"You have changed a lot.\""
+      ]
+    },
+    {
+      "title": "Say hello to sb",
+      "tips": [
+        "가족이나 지인의 안부를 부탁할 때 필수"
+      ]
+    },
+    {
+      "title": "Keep in touch",
+      "tips": [
+        "헤어질 때 아쉬움을 달래는 인사"
+      ]
+    }
+  ]
+}
