@@ -1,19 +1,25 @@
 {
-  "title": "Look who's here!",
-  "koreanTitle": "아니, 이게 누구야!",
+  "title": "001. What a small world",
+  "koreanTitle": "세상 참 좁다!",
   "mainEx": [
+    "scene 1: A Surprise Encounter",
     "A: Look who’s here! I can't believe it.",
     "B: Oh my god! What a small world. Good to see you!",
     "A: Long time no see. How have you been?",
     "B: I’m doing great. You know what? You haven’t changed a bit!",
+    "",
+    "scene 2: Farewell",
     "A: Nice talking to you. I have to go now. Say hello to your father.",
     "B: Sure! Take care and I’ll keep in touch."
   ],
   "mainExKo": [
+    "scene 1: 우연한 재회",
     "A: 아니, 이게 누구야! 진짜 믿기지 않네.",
     "B: 세상에! 세상 참 좁다. 정말 반가워!",
     "A: 오랜만이야. 그동안 어떻게 지냈어?",
     "B: 나야 잘 지내지. 근데 너 말야, 하나도 안 변했다!",
+    "",
+    "scene 2: 작별 인사",
     "A: 즐거웠어. 이제 가봐야겠다. 아버님께 안부 전해드려.",
     "B: 물론이지! 몸조심하고 내가 연락할게."
   ],

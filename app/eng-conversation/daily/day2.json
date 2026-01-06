@@ -1,0 +1,55 @@
+{
+  "title": "002. That’s what friends are for",
+  "koreanTitle": "친구 좋다는 게 뭐야!",
+  "mainEx": [
+    "scene 1: A Helpful Friend",
+    "A: It’s freezing outside. I’ll give you a ride home.",
+    "B: Oh, don’t bother, but thanks anyway.",
+    "A: Don’t mention it. That’s what friends are for.",
+    "B: Something smells fishy. Just be yourself!",
+    "",
+    "scene 2: The Perfect Gift",
+    "A: Happy Birthday! I got something for your birthday.",
+    "B: A present for me? You shouldn’t have!",
+    "A: Open it! I hope you like it."
+  ],
+  "mainExKo": [
+    "scene 1: 퇴근길 깜짝 호의",
+    "A: 밖이 너무 춥다. 내가 집까지 태워 줄게.",
+    "B: 아냐, 일부러 그럴 거 없어. 그래도 고마워!",
+    "A: 별말을 다 하네. 친구 좋다는 게 뭐야.",
+    "B: 뭔가 수상한데? 그냥 평소처럼 해!",
+    "",
+    "scene 2: 감동의 선물",
+    "A: 생일 축하해! 네 생일 선물로 뭘 좀 준비했어.",
+    "B: 내 선물이라고? 어머, 이러지 않아도 되는데!",
+    "A: 어서 열어봐! 마음에 들었으면 좋겠다."
+  ],
+  "subEx": [
+    {
+      "title": "You shouldn’t have!",
+      "tips": [
+        "선물을 받았을 때 미안하면서도 고마운 마음을 표현하는 자연스러운 인사"
+      ]
+    },
+    {
+      "title": "Give someone a ride",
+      "tips": [
+        "누군가를 차로 데려다줄 때 쓰는 표현",
+        "\"내가 가는 길에 내려 줄게\"라고 하려면 \"I'll drop you off on the way.\"라고 말해보세요."
+      ]
+    },
+    {
+      "title": "Be yourself",
+      "tips": [
+        "면접이나 중요한 일을 앞두고 긴장한 친구에게 \"꾸미려 하지 말고 평소 네 모습대로 해\"라고 격려할 때 딱 맞는 표현"
+      ]
+    },
+    {
+      "title": "Count on someone",
+      "tips": [
+        "누군가를 신뢰하고 의지할 때 사용. \"I can always count on you.\""
+      ]
+    }
+  ]
+}
