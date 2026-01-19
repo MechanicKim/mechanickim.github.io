@@ -8,4 +8,3 @@
 ### .NET
 
 - [.NET의 역사](./3_DOT_NET.md)
-- [web.config 파일을 통해 프로젝트가 사용하는 Windows 기능, 외부 모듈 파악하기](./4_WEB_CONFIG.md)
