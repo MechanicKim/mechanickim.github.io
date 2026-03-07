@@ -23,6 +23,7 @@
 - [Kubernetes(with Colima)](./docker/KUBERNETES.md)
 
 ## DB
+- [Redis](./redis/REDIS.md)
 - [Valkey](./valkey/VALKEY.md)
 
 ## Language

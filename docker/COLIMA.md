@@ -42,6 +42,7 @@ colima status
 colima start --arch x86_64 --memory 4
 ```
 - **애플 실리콘 권장 옵션**: `colima start --cpu 4 --memory 8 --arch aarch64`
+- **Rosetta 사용 옵션**: `colima start --cpu 4 --memory 8 --arch aarch64 --vm-type=vz --vz-rosetta`
 
 ## 주요 설정 및 최적화
 
